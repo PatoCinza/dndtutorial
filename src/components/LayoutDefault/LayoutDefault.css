@@ -1,0 +1,29 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin: 0;
+    background-color: #d5d5d5;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.title {
+    margin: 0;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    padding: 8px;
+}
+
+.content {
+    background-color: #f1f1f1;
+    min-height: 100vh;
+    max-width: 80vw;
+    margin-left: 10vw;
+    padding-top: 20px;
+}
