@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/dndtutorial/static/css/main.883ba071.css",
+    "main.js": "/dndtutorial/static/js/main.9b793a07.js",
+    "static/js/453.499948c7.chunk.js": "/dndtutorial/static/js/453.499948c7.chunk.js",
+    "static/media/alignment-chart.png": "/dndtutorial/static/media/alignment-chart.17723d4cda020bbcb726.png",
+    "static/media/d20-index.png": "/dndtutorial/static/media/d20-index.43493308faab2a4b8997.png",
+    "static/media/experience-table.png": "/dndtutorial/static/media/experience-table.4a4dfe91a3fbd7deedb5.png",
+    "index.html": "/dndtutorial/index.html",
+    "main.883ba071.css.map": "/dndtutorial/static/css/main.883ba071.css.map",
+    "main.9b793a07.js.map": "/dndtutorial/static/js/main.9b793a07.js.map",
+    "453.499948c7.chunk.js.map": "/dndtutorial/static/js/453.499948c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.883ba071.css",
+    "static/js/main.9b793a07.js"
+  ]
+}
