@@ -1,0 +1,32 @@
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.spell-card {
+    margin: 4pt;
+    width: 100%;
+    border: 1px solid;
+}
+
+.spell-card-header {
+    padding: 0pt 4pt;
+    display: flex;
+    flex-direction: row;
+}
+
+.spell-title {
+    font-variant: small-caps;
+    text-align: left;
+}
+
+.spell-school {
+    font-variant: normal;
+    font-size: 8pt;
+    font-style: italic;
+    text-align: right;
+    white-space: nowrap;
+    flex-grow: 1;
+    margin-right: 0.2em;
+}
