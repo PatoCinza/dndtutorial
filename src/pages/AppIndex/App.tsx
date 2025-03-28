@@ -17,6 +17,18 @@ function App() {
         >
           Como jogar
         </NavLink>
+        <NavLink
+          className="App-link"
+          to="/tutorial-ficha" end
+        >
+          Como fazer ficha
+        </NavLink>
+        <NavLink
+          className="App-link"
+          to="/lista-magias" end
+        >
+          Lista de Magias
+        </NavLink>
       </header>
     </div>
   );

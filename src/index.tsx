@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import reportWebVitals from './reportWebVitals';
 import './index.css';
+// Layout
 import { LayoutDefault } from './components/LayoutDefault/LayoutDefault';
+// Pages
 import AppIndex from './pages/AppIndex/App';
 import ComoJogar from './pages/ComoJogar/ComoJogar';
 import TutorialFicha from './pages/TutorialFicha/TutorialFicha';
-import reportWebVitals from './reportWebVitals';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import ListaMagias from './pages/Magias/Magias';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,6 +21,7 @@ root.render(
         <Route index element={<AppIndex />} />
         <Route path='/como-jogar' element={<ComoJogar />} />
         <Route path='/tutorial-ficha' element={<TutorialFicha />} />
+        <Route path='/lista-magias' element={<ListaMagias />} />
       </Route>
     </Routes>
   </HashRouter>

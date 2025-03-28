@@ -3,7 +3,7 @@ import React from 'react';
 export const LinkLivroJogador = () => {
   return (
     <a
-        href='https://bibliotecaelfica.org/category/dd-5e/'
+        href='https://drive.google.com/uc?export=download&id=1AmTrWFhAmpyb6MVulfFnWhaI-J-DImTK'
         target='_blank'
         rel='noreferrer'
     >Livro do jogador</a>
