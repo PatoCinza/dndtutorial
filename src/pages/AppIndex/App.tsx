@@ -29,6 +29,18 @@ function App() {
         >
           Lista de Magias
         </NavLink>
+        <NavLink
+          className="App-link"
+          to="/ficha-personagem" end
+        >
+          Ficha do personagem
+        </NavLink>
+        <NavLink
+          className="App-link"
+          to="/classes/" end
+        >
+          Classes
+        </NavLink>
       </header>
     </div>
   );
