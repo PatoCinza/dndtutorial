@@ -22,8 +22,8 @@
 
 .content {
     background-color: #f1f1f1;
+    max-width: 900px;
     min-height: 100vh;
-    max-width: 80vw;
-    margin-left: 10vw;
+    margin: 0 auto;
     padding-top: 20px;
 }
