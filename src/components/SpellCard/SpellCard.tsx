@@ -5,6 +5,9 @@ import { ReactComponent as UnknownSpell } from './assets/book-unknown.svg'
 import cast from './assets/cast.svg'
 import component from './assets/components.svg'
 import { ReactComponent as Concentration } from './assets/spell icons/concentration.svg'
+import { ReactComponent as Ritual } from './assets/spell icons/ritual.svg'
+import { ReactComponent as Circle } from './assets/magic level icons/6 level.svg'
+import { ReactComponent as School } from './assets/spell icons/necromancy.svg'
 import duration from './assets/duratio..svg'
 import range from './assets/range.svg'
 import './SpellCard.css'
@@ -14,7 +17,10 @@ export const SpellCard = ({ spell }: any) => {
   return (
     <div className='spell-card grid-item'>
         <div className='spell-props'>
-            <div className='icon'>{spell.duration.concentration ? <Concentration /> : ''}</div>
+            <div>{spell.duration.concentration ? <Circle /> : ''}</div>
+            <div>{spell.duration.concentration ? <School /> : ''}</div>
+            <div>{spell.duration.concentration ? <Ritual /> : ''}</div>
+            <div>{spell.duration.concentration ? <Concentration /> : ''}</div>
         </div>
         <div className='spell-card-header'>
             <h3>{spell.name}</h3>
