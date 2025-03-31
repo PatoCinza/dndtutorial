@@ -4,7 +4,7 @@ import knownSpell from './assets/book-known.svg'
 import { ReactComponent as UnknownSpell } from './assets/book-unknown.svg'
 import cast from './assets/cast.svg'
 import component from './assets/components.svg'
-import { ReactComponent as Concentration } from './assets/concentration.svg'
+import { ReactComponent as Concentration } from './assets/spell icons/concentration.svg'
 import duration from './assets/duratio..svg'
 import range from './assets/range.svg'
 import './SpellCard.css'
@@ -13,6 +13,30 @@ import './SpellCard.css'
 export const SpellCard = ({ spell }: any) => {
   return (
     <div className='spell-card grid-item'>
+        <div className='spell-props'>
+            <div className='icon'>{spell.duration.concentration ? <Concentration /> : ''}</div>
+        </div>
+        <div className='spell-card-header'>
+            <h3>{spell.name}</h3>
+            <div className='spell-classes'>como colocar os icones aqui</div>
+            <p><strong>Tempo de Comjuração: </strong>{spell.casting.time} {spell.casting.unit}</p>
+            <p><strong>Alcance: </strong>{spell.range.value} {spell.range.unit}</p>
+            <p><strong>Duração: </strong>{spell.duration.value} {spell.duration.unit}</p>
+            <div className='spell-components'>V, S, M</div>
+        </div>
+
+        <div className='spell-description'>
+            {
+                spell.components.material.description ?
+                    <p><strong>Material: </strong>{spell.components.material.description}</p> : ''
+            }
+            {   spell.body.description.map((paragraph: any) => (<p>{paragraph.description}</p>))}
+        </div>
+    </div>
+
+
+
+    /*<div className='spell-card grid-item'>
         <div className='spell-card-header'>
             <div className='spell-title'>{spell.name}</div>
             <label className='spell-school'>{spell.school}</label>
@@ -27,7 +51,7 @@ export const SpellCard = ({ spell }: any) => {
             </div>
             
             <div>{spell.duration.value} {spell.duration.unit}
-                 <span>{spell.duration.concentration ? <Concentration /> : ''}</span>
+                 <span className='icon'>{spell.duration.concentration ? <Concentration /> : ''}</span>
             </div>
         </div>
         <div className='spell-description'>
@@ -37,7 +61,7 @@ export const SpellCard = ({ spell }: any) => {
             }
             {   spell.body.description.map((paragraph: any) => (<p>{paragraph.description}</p>))}
         </div>
-    </div>
+    </div>*/
 )
 }
 

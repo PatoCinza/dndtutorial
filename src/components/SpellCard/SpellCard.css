@@ -1,8 +1,15 @@
 .grid-list {
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 8px;
+    grid-gap: 8px;*/
     margin: 0 8px;
+    columns: 400px;
+    gap: 8px;
+
+    > * {
+        break-inside: avoid;
+        margin-bottom: 8px;
+    }
 }
 
 .spell-card {
@@ -12,10 +19,22 @@
     > * {
         margin: 8px;
     }
+
+    .icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+    }
 }
 
 .spell-card-header {
-
+    h3 {
+        margin: 0 0 12px 0
+    }
+    p {
+        margin: 0 0 4px 0;
+    }
 }
 
 .spell-props {
