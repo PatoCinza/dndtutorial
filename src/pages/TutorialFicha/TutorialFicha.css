@@ -1,31 +1,35 @@
-.downloads {
-    font-size: large;
-}
-
-.area {
-    margin-bottom: 0;
-}
-
-.sheet-header {
-    display: flex;
-    flex-direction: column;
-    margin: 8px;
-    text-align: justify;
-    align-items: start;    
-    align-content: start;
-    justify-content: space-between;
-}
-
-.text-top {
-    display: flex;
-    flex-direction: row;
-    text-align: justify;
-    align-items: start;    
-    align-content: start;
-    justify-content: start;
-}
-
-.alignment-img {
-    max-width: 350px;
-    max-height: 350px;
+.tutorial-sheet {
+    position: relative;
+    
+    .downloads {
+        font-size: large;
+    }
+    
+    .area {
+        margin-bottom: 0;
+    }
+    
+    .sheet-header {
+        display: flex;
+        flex-direction: column;
+        margin: 8px;
+        text-align: justify;
+        align-items: start;    
+        align-content: start;
+        justify-content: space-between;
+    }
+    
+    .text-top {
+        display: flex;
+        flex-direction: row;
+        text-align: justify;
+        align-items: start;    
+        align-content: start;
+        justify-content: start;
+    }
+    
+    .alignment-img {
+        max-width: 350px;
+        max-height: 350px;
+    }
 }

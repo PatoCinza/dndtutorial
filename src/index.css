@@ -27,6 +27,7 @@ https://serp.co/tools/css-reset/
 
  html {
   line-height: 1.5; /* 1 */
+  font-size: 100%;
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 

@@ -8,7 +8,7 @@ import './TutorialFicha.css'
 
 function TutorialFicha() {
   return (
-    <div>
+    <div className='tutorial-sheet'>
         <section className='downloads'>
             <label>Você pode baixar a ficha aqui: <LinkFicha /></label>
         </section>
