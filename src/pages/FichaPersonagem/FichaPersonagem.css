@@ -1,0 +1,18 @@
+.sheet-grid {
+    display: grid;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+
+    >*{
+        background-color: grey;
+        border: 1px solid black;
+    }
+    .header { grid-area: 1 / 1 / 2 / 6; }
+    .logo { grid-area: 2 / 1 / 3 / 6; }
+    .info { grid-area: 3 / 3 / 4 / 6; }
+    .equipment { grid-area: 4 / 3 / 5 / 6; }
+    .atributt { grid-area: 3 / 1 / 6 / 3; }
+    .damage-table { grid-area: 6 / 1 / 8 / 3; }
+    .ClasEspeTalen { grid-area: 5 / 3 / 8 / 6; }
+ }
+    

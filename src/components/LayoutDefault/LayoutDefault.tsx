@@ -6,7 +6,7 @@ import './LayoutDefault.css'
 export const LayoutDefault = () => {
   return (
     <>
-      <header className='header'>
+      <header>
         <h1 className='title'>Referência D&D</h1>
         <nav className='nav-bar'>
             <NavLink className='nav-item' to="/">Home</NavLink>
