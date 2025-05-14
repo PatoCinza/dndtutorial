@@ -50,35 +50,6 @@ export const SpellCard = ({ spell }: any) => {
             {   spell.body.description.map((paragraph: any) => (<p>{paragraph.description}</p>))}
         </div>
     </div>
-
-
-
-    /*<div className='spell-card grid-item'>
-        <div className='spell-card-header'>
-            <div className='spell-title'>{spell.name}</div>
-            <label className='spell-school'>{spell.school}</label>
-        </div>
-        <div className='spell-props'>
-            <div>{spell.casting.time} {spell.casting.unit}</div>
-            <div>{spell.range.value} {spell.range.unit}</div>
-            <div>
-                {spell.components.isVerbal ? 'V'  : ''}
-                {spell.components.isSomatic ? ', S'  : ''}
-                {spell.components.isMaterial ? ', M'  : ''}
-            </div>
-            
-            <div>{spell.duration.value} {spell.duration.unit}
-                 <span className='icon'>{spell.duration.concentration ? <Concentration /> : ''}</span>
-            </div>
-        </div>
-        <div className='spell-description'>
-            {
-                spell.components.material.description ?
-                    <div><strong>Material: </strong>{spell.components.material.description}</div> : ''
-            }
-            {   spell.body.description.map((paragraph: any) => (<p>{paragraph.description}</p>))}
-        </div>
-    </div>*/
 )
 }
 
