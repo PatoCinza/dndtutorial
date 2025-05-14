@@ -71,7 +71,7 @@ function FichaPersonagem() {
                     <div className='life-header'>
                         <div>
                             <h4>HIT POINTS</h4>
-                            <div className='fake-input large'>
+                            <div className='fake-input large padding-b-g'>
                                 <p>8</p>
                                 <label>ATUAL</label>
                             </div>

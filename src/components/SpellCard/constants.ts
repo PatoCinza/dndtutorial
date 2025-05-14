@@ -7,16 +7,16 @@ import { ReactComponent as Illusion } from './assets/spell icons/illusion.svg';
 import { ReactComponent as Transmutation } from './assets/spell icons/transmutation.svg';
 import { ReactComponent as Abjuration } from './assets/spell icons/abjuration.svg';
 
-import { ReactComponent as Level0 } from './assets/magic level icons/Tricks.svg';
-import { ReactComponent as Level1 } from './assets/magic level icons/1 level.svg';
-import { ReactComponent as Level2 } from './assets/magic level icons/2 level.svg';
-import { ReactComponent as Level3 } from './assets/magic level icons/3 level.svg';
-import { ReactComponent as Level4 } from './assets/magic level icons/4 level.svg';
-import { ReactComponent as Level5 } from './assets/magic level icons/5 level.svg';
-import { ReactComponent as Level6 } from './assets/magic level icons/6 level.svg';
-import { ReactComponent as Level7 } from './assets/magic level icons/7 level.svg';
-import { ReactComponent as Level8 } from './assets/magic level icons/8 level.svg';
-import { ReactComponent as Level9 } from './assets/magic level icons/9 level.svg';
+import { ReactComponent as Level0 } from './assets/magic level icons/tricks.svg';
+import { ReactComponent as Level1 } from './assets/magic level icons/1 circulo.svg';
+import { ReactComponent as Level2 } from './assets/magic level icons/2 circulo.svg';
+import { ReactComponent as Level3 } from './assets/magic level icons/3 circulo.svg';
+import { ReactComponent as Level4 } from './assets/magic level icons/4 circulo.svg';
+import { ReactComponent as Level5 } from './assets/magic level icons/5 circulo.svg';
+import { ReactComponent as Level6 } from './assets/magic level icons/6 circulo.svg';
+import { ReactComponent as Level7 } from './assets/magic level icons/7 circulo.svg';
+import { ReactComponent as Level8 } from './assets/magic level icons/8 circulo.svg';
+import { ReactComponent as Level9 } from './assets/magic level icons/9 circulo.svg';
 
 interface SpellSchool {
     school: string;

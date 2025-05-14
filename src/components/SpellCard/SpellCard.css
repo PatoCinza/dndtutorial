@@ -76,7 +76,7 @@
         right: 18px;
         top: 77px;
     }
-    div:last-child {
+    div:nth-child(4) {
         width: 40px;
         height: 40px;
         position: absolute;
@@ -101,4 +101,10 @@
 .spell-components svg {
     width: 24px;
     height: 24px;
+}
+
+.spell-description {
+    p:first-child{
+        margin-top: 0;
+    }
 }
