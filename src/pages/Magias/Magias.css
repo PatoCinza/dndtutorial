@@ -1,0 +1,38 @@
+.modern-select {
+  width: 100%;
+  padding: 10px 36px 10px 12px;
+  border: 1.5px solid var(--border-color, #bdbdbd);
+  border-radius: 6px;
+  background: var(--card-background, #fff);
+  color: var(--text-color, #222);
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  appearance: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: none;
+  cursor: pointer;
+  position: relative;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px 20px;
+  padding-right: 40px;
+}
+
+.modern-select:focus {
+  border-color: var(--primary-color, #2196f3);
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.15);
+}
+
+.modern-select option {
+  color: var(--text-color, #222);
+  background: var(--card-background, #fff);
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
