@@ -8,7 +8,7 @@ import { ReactComponent as Vocal } from './assets/spell icons/vocal.svg'
 import { ReactComponent as Somatic } from './assets/spell icons/somatic.svg'
 import { ReactComponent as Material } from './assets/spell icons/material.svg'
 
-import { SpellClasses } from '../SpellClasses/SpellClasses'
+import { SpellClasses } from './SpellClasses/SpellClasses'
 import { spellSchoolMap, spellLevelMap } from './constants';
 
 import './SpellCard.css'

@@ -30,6 +30,7 @@ root.render(
           <Route path='/ficha-personagem' element={<FichaPersonagem />} />
           <Route path='/classes'>
             <Route index element={<Classes />}/>
+            <Route path='/classes/:className' element={<Classes />}/>
           </Route>
         </Route>
       </Routes>

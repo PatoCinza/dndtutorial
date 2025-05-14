@@ -5,8 +5,17 @@ import './Classes.css'
 
 import { ReactComponent as UnknownSpell } from '../../components/SpellCard/assets/book-unknown.svg'
 import { SpellCard } from '../../components/SpellCard/SpellCard';
-
+import Barbaro from './Barbaro/Barbaro';
 function Classes() {
+
+    if (window.location.hash.includes('barbarian')) {
+        return (
+            <div className="App">
+                <NavLink to='/classes'>Voltar</NavLink>
+                <Barbaro />
+            </div>
+        )
+    }
 
     return (
         <div className="App">

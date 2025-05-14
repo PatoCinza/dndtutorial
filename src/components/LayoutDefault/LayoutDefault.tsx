@@ -5,16 +5,19 @@ import './LayoutDefault.css'
 
 export const LayoutDefault = () => {
   return (
-    <>
-      <header>
+    <div className="layout">
+      <nav className='nav-bar'>
         <h1 className='title'>Referência D&D</h1>
-        <nav className='nav-bar'>
-            <NavLink className='nav-item' to="/">Home</NavLink>
-        </nav>
-      </header>
+        <NavLink className='nav-item' to="/">Home</NavLink>
+        <NavLink className='nav-item' to="/como-jogar">Como Jogar</NavLink>
+        <NavLink className='nav-item' to="/tutorial-ficha">Tutorial de Ficha</NavLink>
+        <NavLink className='nav-item' to="/lista-magias">Lista de Magias</NavLink>
+        <NavLink className='nav-item' to="/ficha-personagem">Ficha de Personagem</NavLink>
+        <NavLink className='nav-item' to="/classes">Classes</NavLink>
+      </nav>
       <main className='content'>
         <Outlet />
       </main>
-    </>
+    </div>
   );
 }
