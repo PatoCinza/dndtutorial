@@ -1,10 +1,8 @@
 .grid-list {
-    /*display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 8px;*/
+    column-count: auto;
+    column-width: 400px;
+    column-gap: 8px;
     margin: 0 8px;
-    columns: 400px;
-    gap: 8px;
 
     > * {
         break-inside: avoid;
@@ -13,8 +11,17 @@
 }
 
 .spell-card {
-    border: 1px solid;
+    border: 1px solid var(--border-color);
     text-align: left;
+    border-radius: 8px;
+    box-shadow: var(--md-elevation-1);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: var(--card-background);
+    color: var(--text-color);
+
+    &:hover {
+        box-shadow: var(--md-elevation-2);
+    }
 
     > * {
         margin: 8px;
@@ -26,14 +33,20 @@
         height: 40px;
         vertical-align: middle;
     }
+
+    svg {
+        fill: var(--text-color);
+    }
 }
 
 .spell-card-header {
     h3 {
-        margin: 0 0 12px 0
+        margin: 0 0 12px 0;
+        color: var(--text-color);
     }
     p {
         margin: 0 0 4px 0;
+        color: var(--md-text-secondary-dark);
     }
 }
 
@@ -78,4 +91,14 @@
 
 .spell-school {
 
+}
+
+.spell-components {
+    display: flex;
+    gap: 8px;
+}
+
+.spell-components svg {
+    width: 24px;
+    height: 24px;
 }
