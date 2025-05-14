@@ -2,33 +2,44 @@ import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import knownSpell from './assets/book-known.svg'
 import { ReactComponent as UnknownSpell } from './assets/book-unknown.svg'
-import cast from './assets/cast.svg'
-import component from './assets/components.svg'
 import { ReactComponent as Concentration } from './assets/spell icons/concentration.svg'
 import { ReactComponent as Ritual } from './assets/spell icons/ritual.svg'
-import { ReactComponent as Circle } from './assets/magic level icons/6 level.svg'
-import { ReactComponent as School } from './assets/spell icons/necromancy.svg'
-import duration from './assets/duratio..svg'
-import range from './assets/range.svg'
+import { ReactComponent as Vocal } from './assets/spell icons/vocal.svg'
+import { ReactComponent as Somatic } from './assets/spell icons/somatic.svg'
+import { ReactComponent as Material } from './assets/spell icons/material.svg'
+
+import { SpellClasses } from '../SpellClasses/SpellClasses'
+import { spellSchoolMap, spellLevelMap } from './constants';
+
 import './SpellCard.css'
 
-
 export const SpellCard = ({ spell }: any) => {
+  const SchoolIcon = spellSchoolMap.find((school) => school.school === spell.school)?.icon;
+  const LevelIcon = spellLevelMap.find((level) => level.level === spell.level)?.icon;
+
   return (
     <div className='spell-card grid-item'>
         <div className='spell-props'>
-            <div>{spell.duration.concentration ? <Circle /> : ''}</div>
-            <div>{spell.duration.concentration ? <School /> : ''}</div>
-            <div>{spell.duration.concentration ? <Ritual /> : ''}</div>
-            <div>{spell.duration.concentration ? <Concentration /> : ''}</div>
+            <div title={`Nível ${spell.level}`}>
+                {LevelIcon && <LevelIcon />}
+            </div>
+            <div title={spell.school}>
+                {SchoolIcon && <SchoolIcon />}
+            </div>
+            <div title='Ritual'>{spell.isRitual ? <Ritual /> : ''}</div>
+            <div title='Concentração'>{spell.duration.concentration ? <Concentration /> : ''}</div>
         </div>
         <div className='spell-card-header'>
             <h3>{spell.name}</h3>
-            <div className='spell-classes'>como colocar os icones aqui</div>
-            <p><strong>Tempo de Comjuração: </strong>{spell.casting.time} {spell.casting.unit}</p>
+            <SpellClasses classes={spell.classes} />
+            <p><strong>Tempo de Conjuração: </strong>{spell.casting.time} {spell.casting.unit}</p>
             <p><strong>Alcance: </strong>{spell.range.value} {spell.range.unit}</p>
             <p><strong>Duração: </strong>{spell.duration.value} {spell.duration.unit}</p>
-            <div className='spell-components'>V, S, M</div>
+            <div className='spell-components'>
+                {spell.components.isVerbal && <Vocal title="Verbal" />}
+                {spell.components.isSomatic && <Somatic title="Somatic" />}
+                {spell.components.isMaterial && <Material title="Material" />}
+            </div>
         </div>
 
         <div className='spell-description'>
