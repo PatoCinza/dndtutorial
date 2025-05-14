@@ -7,7 +7,7 @@ import { ReactComponent as Illusion } from './assets/spell icons/illusion.svg';
 import { ReactComponent as Transmutation } from './assets/spell icons/transmutation.svg';
 import { ReactComponent as Abjuration } from './assets/spell icons/abjuration.svg';
 
-import { ReactComponent as Level0 } from './assets/magic level icons/tricks.svg';
+import { ReactComponent as Level0 } from './assets/magic level icons/Tricks.svg';
 import { ReactComponent as Level1 } from './assets/magic level icons/1 level.svg';
 import { ReactComponent as Level2 } from './assets/magic level icons/2 level.svg';
 import { ReactComponent as Level3 } from './assets/magic level icons/3 level.svg';

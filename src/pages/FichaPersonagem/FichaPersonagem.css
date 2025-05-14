@@ -1,5 +1,5 @@
 .sheet-content {
-    --border: 1px solid #000000;
+    --border: 1px solid #ffffff;
     --bg-color: var(--card-background);
     --gap-p: 4px;
     --gap-m: 8px;
@@ -8,6 +8,16 @@
     --font-size-m: 1rem;
     --font-size-g: 1.5rem;
     --font-size-gg: 2rem;
+    --font-size-large: 3rem;
+    --line-height-large: 3.5rem;
+
+    h4 {
+        margin: 0;
+        padding-top: var(--gap-p);
+        font-size: var(--font-size-m);
+        line-height: var(--font-size-g);
+        font-weight: bold;
+    }
 }
 
 .sheet-grid {
@@ -49,7 +59,8 @@
     position: relative;    
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--gap-m);
+    gap: var(--gap-p);
+    padding: var(--gap-p) 0;
     padding-right: var(--gap-g);
     margin-right: calc(4 * var(--gap-g) + var(--gap-g) / 2);
 
@@ -75,10 +86,18 @@
     }
 }
 
+.ac-header {
+    min-width: calc(var(--line-height-large)*2);
+    padding: var(--gap-p) 0;
+    display: grid;
+    align-content: space-between;
+}
+
 .life-header {
     display: flex;
     flex-flow: row;
     align-items: stretch;
+    padding: var(--gap-p) 0;
 
     >*{
         flex-grow: 1;
@@ -87,9 +106,28 @@
     div:first-child {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        row-gap: var(--gap-m);
+        align-content: space-between;
 
         h4 {grid-column: 1 /3;}
         .large {grid-row: 2 /4;}
+    }
+
+    >:nth-child(2){
+        display: grid;
+        row-gap: var(--gap-m);
+        align-content: space-between;
+        border-left: var(--border);
+        border-right: var(--border);
+    }
+
+    .death-dice {
+        display: grid;
+        align-content: space-between;
+
+        input {
+            margin: var(--gap-p);
+        }
     }
 }
 
@@ -104,6 +142,17 @@
         text-align: center;
     }
 
+    &.large {
+        text-align: center;
+        align-self: end;
+
+        p {            
+            font-size: var(--font-size-large);
+            line-height: var(--line-height-large);
+        }
+    }
+
+
     h3, p {
         margin: 0;
         font-weight: 600;
@@ -111,7 +160,6 @@
     }
 
     h3 {
-        margin-top: var(--gap-p);
         font-size: var(--font-size-g);
         line-height: var(--font-size-gg);
     }
@@ -128,17 +176,13 @@
     }
 }
 
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    height: 100%;
-}
-
-.dnd-logo {
-    max-width: 200px;
-    height: auto;
+.sheet-logo {
+    .dnd-logo {
+        max-width: 40rem;
+        height: auto;
+        vertical-align: middle;
+        padding: var(--gap-g);
+    }
 }
 
 .sheet-info {

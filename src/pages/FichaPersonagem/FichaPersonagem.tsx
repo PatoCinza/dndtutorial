@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import dndLogo from '../../assets/dnd-logo.png';
+import dndLogo from '../../assets/dnd-logo.svg';
 import './FichaPersonagem.css'
 import { spells } from '../../components/SpellCard/assets/spells';
 
@@ -54,12 +54,12 @@ function FichaPersonagem() {
                         </div>
                     </div>
                     <div className='ac-header'>
-                        <h4>ARMOR CLASS</h4>
+                        <h4>AC</h4>
                         <div className='fake-input large'>
                             <p>{ac}</p>
-                            <label>AC</label>
+                            <label>ARMOR CLASS</label>
                         </div>
-                        <div className='fake-input'>
+                        <div className='fake-input text-center'>
                             <input
                                 type="checkbox"
                                 id='shield'
@@ -75,35 +75,35 @@ function FichaPersonagem() {
                                 <p>8</p>
                                 <label>ATUAL</label>
                             </div>
-                            <div className='fake-input'>
+                            <div className='fake-input text-center'>
                                 <p>0</p>
                                 <label>TEMPORÁRIO</label>
                             </div>
-                            <div className='fake-input'>
+                            <div className='fake-input text-center'>
                                 <p>8</p>
                                 <label>MÁXIMO</label>
                             </div>
                         </div>
                         <div>
                             <h4>HIT DICE</h4>
-                            <div className='fake-input'>
+                            <div className='fake-input text-center'>
                                 <p>0</p>
                                 <label>GASTO</label>
                             </div>
-                            <div className='fake-input'>
+                            <div className='fake-input text-center'>
                                 <p>1 d6</p>
                                 <label>MÁXIMO</label>
                             </div>
                         </div>
-                        <div>
+                        <div className='death-dice'>
                             <h4>HIT DEATH</h4>
-                            <div>
+                            <div  className='fake-input text-center'>
                                 <input type="checkbox" id='success1'></input>
                                 <input type="checkbox" id='success2'></input>
                                 <input type="checkbox" id='success3'></input>
                                 <label>SUCESSO</label>
                             </div>
-                            <div>
+                            <div  className='fake-input text-center'>
                                 <input type="checkbox" id='failure1'></input>
                                 <input type="checkbox" id='failure2'></input>
                                 <input type="checkbox" id='failure3'></input>
@@ -113,14 +113,11 @@ function FichaPersonagem() {
                     </div>
                 </section>
                 <section className='sheet-logo'>
-                    <div className='logo-container'>
-                        <img 
-                        /* Meu eu nao creio que eu baixei um fake png velhoooooo*/
-                            src={dndLogo} 
-                            alt="D&D Logo" 
-                            className='dnd-logo'
-                        />
-                    </div>
+                    <img
+                        src={dndLogo} 
+                        alt="D&D Logo" 
+                        className='dnd-logo'
+                    />
                 </section>
                 <section className='sheet-atributtes'>
                     <div className="attribute-block">
