@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './Magias.css'
 import { spells } from '../../components/SpellCard/assets/spells';
@@ -9,41 +9,35 @@ import { SpellCard } from '../../components/SpellCard/SpellCard';
 
 function ListaMagias() {
     const [spellList, setSpellList] = useState(spells);
+    const [classFilter, setClassFilter] = useState('all');
+    const [levelFilter, setLevelFilter] = useState('all');
+    const [schoolFilter, setSchoolFilter] = useState('all');
 
-    const filterSpellList = (key: string, query: string) => {
-        if (query === 'all') {
-            setSpellList(spells);
-        } else {
-            setSpellList(spellList.filter((spell) => {
-                if(typeof (spell as any)[key] === 'number') {
-                    return (spell as any)[key] === Number(query);
-                } else {
-                    return (spell as any)[key].includes(query);
-                }
-            }));
-        }
-    }
+    useEffect(() => {
+        console.log(classFilter, levelFilter, schoolFilter);
+        setSpellList(spells.filter((spell) => {
+            return (
+                (classFilter === 'all' || spell.classes.includes(classFilter)) &&
+                (levelFilter === 'all' || spell.level === Number(levelFilter)) &&
+                (schoolFilter === 'all' || spell.school === schoolFilter)
+            )
+        }));
+    }, [classFilter, levelFilter, schoolFilter]);
 
     const filterSpellListByClass = (className: string) => {
-        filterSpellList('classes', className);
+        setClassFilter(className);
     }
 
     const filterSpellListByLevel = (level: string) => {
-        filterSpellList('level', level);
+        setLevelFilter(level);
     }
 
     const filterSpellListBySchool = (school: string) => {
-        filterSpellList('school', school);
+        setSchoolFilter(school);
     }
 
     return (
         <div className="App">
-            Referencia (cópia pra ser honesto): <a
-                href='https://avribacki.gitlab.io/magias5e/'
-                target='_blank'
-                rel='noreferrer'
-            >Lista de magias by avribacki</a>
-            <br />
             <div id="menu-container">
                 <div id="menu">
                     <div className="menu-item">
@@ -107,7 +101,7 @@ function ListaMagias() {
                     spellList.map((spell) => <SpellCard spell={spell}/>)
                 ) :
                 (
-                    <div id='empty-message'>Nenhuma magia selecionada</div>
+                    <div id='empty-message'>Nenhuma magia corresponde aos filtros selecionados</div>
                 )}
             </div>
         </div>
