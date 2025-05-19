@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import './Magias.css'
-import { spellByClass } from '../../components/SpellCard/assets/spellList';
 import { spells } from '../../components/SpellCard/assets/spells';
 
 import knownSpell from './assets/book-known.svg'
@@ -16,7 +14,7 @@ function ListaMagias() {
         if (query === 'all') {
             setSpellList(spells);
         } else {
-            setSpellList(spells.filter((spell) => {
+            setSpellList(spellList.filter((spell) => {
                 if(typeof (spell as any)[key] === 'number') {
                     return (spell as any)[key] === Number(query);
                 } else {

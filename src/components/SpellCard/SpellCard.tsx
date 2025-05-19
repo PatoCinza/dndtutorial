@@ -26,7 +26,7 @@ export const SpellCard = ({ spell }: any) => {
             <div title={spell.school}>
                 {SchoolIcon && <SchoolIcon />}
             </div>
-            <div title='Ritual'>{spell.isRitual ? <Ritual /> : ''}</div>
+            {spell.isRitual && <div title='Ritual'><Ritual /></div>}
             <div title='Concentração'>{spell.duration.concentration ? <Concentration /> : ''}</div>
         </div>
         <div className='spell-card-header'>

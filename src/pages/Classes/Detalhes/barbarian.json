@@ -1,0 +1,343 @@
+{
+  "name": "Bárbaro",
+  "title": "Um Combatente Feroz da Fúria Primitiva",
+  "basicTraits": {
+    "primaryAttribute": "Força",
+    "hitDie": "D12",
+    "savingThrows": ["Força", "Constituição"],
+    "skills": {
+      "choose": 2,
+      "options": [
+        "Atletismo",
+        "Intimidação",
+        "Lidar com Animais",
+        "Natureza",
+        "Percepção",
+        "Sobrevivência"
+      ]
+    },
+    "weaponProficiencies": ["Armas Simples", "Armas Marciais"],
+    "armorProficiencies": ["Armaduras Leve", "Armaduras Média", "Escudos"],
+    "startingEquipment": {
+      "options": [
+        {
+          "name": "Opção A",
+          "items": ["4 Machadinhas", "Machado Grande", "Kit de Aventureiro", "15 PO"]
+        },
+        {
+          "name": "Opção B",
+          "items": ["75 PO"]
+        }
+      ]
+    }
+  },
+  "description": "Bárbaros são combatentes poderosos, impulsionados por forças primitivas do multiverso que se manifestam com sua Fúria. Mais do que uma simples emoção — e não limitada à raiva — essa Fúria é a encarnação da ferocidade de um predador, da fúria de uma tempestade e da turbulência do mar.",
+  "features": {
+    "1": {
+      "proficiencyBonus": "+2",
+      "classFeatures": [
+        "Defesa sem Armadura",
+        "Fúria",
+        "Maestria em Arma"
+      ],
+      "rages": 2,
+      "rageDamage": 2,
+      "weaponMastery": 2
+    },
+    "2": {
+      "proficiencyBonus": "+2",
+      "classFeatures": [
+        "Ataque Imprudente",
+        "Sentido de Perigo"
+      ],
+      "rages": 2,
+      "rageDamage": 2,
+      "weaponMastery": 2
+    },
+    "3": {
+      "proficiencyBonus": "+2",
+      "classFeatures": [
+        "Conhecimento Primordial",
+        "Subclasse Bárbaro"
+      ],
+      "rages": 3,
+      "rageDamage": 2,
+      "weaponMastery": 2
+    },
+    "4": {
+      "proficiencyBonus": "+2",
+      "classFeatures": ["Aumento no Valor de Atributo"],
+      "rages": 3,
+      "rageDamage": 2,
+      "weaponMastery": 3
+    },
+    "5": {
+      "proficiencyBonus": "+3",
+      "classFeatures": [
+        "Ataque Extra",
+        "Movimento Rápido"
+      ],
+      "rages": 3,
+      "rageDamage": 2,
+      "weaponMastery": 3
+    },
+    "6": {
+      "proficiencyBonus": "+3",
+      "classFeatures": ["Característica de Subclasse"],
+      "rages": 4,
+      "rageDamage": 2,
+      "weaponMastery": 3
+    },
+    "7": {
+      "proficiencyBonus": "+3",
+      "classFeatures": [
+        "Bote Instintivo",
+        "Instintos Primitivos"
+      ],
+      "rages": 4,
+      "rageDamage": 2,
+      "weaponMastery": 3
+    },
+    "8": {
+      "proficiencyBonus": "+3",
+      "classFeatures": ["Aumento no Valor de Atributo"],
+      "rages": 4,
+      "rageDamage": 2,
+      "weaponMastery": 3
+    },
+    "9": {
+      "proficiencyBonus": "+4",
+      "classFeatures": ["Golpe Brutal"],
+      "rages": 4,
+      "rageDamage": 3,
+      "weaponMastery": 3
+    },
+    "10": {
+      "proficiencyBonus": "+4",
+      "classFeatures": ["Característica de Subclasse"],
+      "rages": 4,
+      "rageDamage": 3,
+      "weaponMastery": 4
+    },
+    "11": {
+      "proficiencyBonus": "+4",
+      "classFeatures": ["Fúria Implacável"],
+      "rages": 4,
+      "rageDamage": 3,
+      "weaponMastery": 4
+    },
+    "12": {
+      "proficiencyBonus": "+4",
+      "classFeatures": ["Aumento no Valor de Atributo"],
+      "rages": 5,
+      "rageDamage": 3,
+      "weaponMastery": 4
+    },
+    "13": {
+      "proficiencyBonus": "+5",
+      "classFeatures": ["Golpe Brutal Aprimorado"],
+      "rages": 5,
+      "rageDamage": 3,
+      "weaponMastery": 4
+    },
+    "14": {
+      "proficiencyBonus": "+5",
+      "classFeatures": ["Característica de Subclasse"],
+      "rages": 5,
+      "rageDamage": 3,
+      "weaponMastery": 4
+    },
+    "15": {
+      "proficiencyBonus": "+5",
+      "classFeatures": ["Fúria Persistente"],
+      "rages": 5,
+      "rageDamage": 3,
+      "weaponMastery": 4
+    },
+    "16": {
+      "proficiencyBonus": "+5",
+      "classFeatures": ["Aumento no Valor de Atributo"],
+      "rages": 5,
+      "rageDamage": 4,
+      "weaponMastery": 4
+    },
+    "17": {
+      "proficiencyBonus": "+6",
+      "classFeatures": ["Golpe Brutal Aprimorado"],
+      "rages": 6,
+      "rageDamage": 4,
+      "weaponMastery": 4
+    },
+    "18": {
+      "proficiencyBonus": "+6",
+      "classFeatures": ["Força Indomável"],
+      "rages": 6,
+      "rageDamage": 4,
+      "weaponMastery": 4
+    },
+    "19": {
+      "proficiencyBonus": "+6",
+      "classFeatures": ["Dádiva Épica"],
+      "rages": 6,
+      "rageDamage": 4,
+      "weaponMastery": 4
+    },
+    "20": {
+      "proficiencyBonus": "+6",
+      "classFeatures": ["Campeão Primitivo"],
+      "rages": 6,
+      "rageDamage": 4,
+      "weaponMastery": 4
+    }
+  },
+  "featureDetails": {
+    "fury": {
+      "name": "Fúria",
+      "level": 1,
+      "description": "Você pode se imbuir com um poder primitivo chamado Fúria, uma força que lhe concede força e resiliência extraordinárias. Você pode entrar em Fúria como uma Ação Bônus, desde que não esteja vestindo armadura Pesada.",
+      "effects": [
+        "Resistência a Dano: Você tem Resistência a dano Contundente, Cortante e Perfurante",
+        "Dano da Fúria: Bônus no dano baseado em Força",
+        "Vantagem com Força: Vantagem em testes de Força e salvaguardas de Força",
+        "Sem Concentração ou Magias: Você não pode manter a Concentração e não pode conjurar magias"
+      ],
+      "duration": "Até o final do seu próximo turno, extensível por até 10 minutos"
+    },
+    "unarmoredDefense": {
+      "name": "Defesa sem Armadura",
+      "level": 1,
+      "description": "Enquanto você não estiver vestindo nenhuma armadura, sua Classe de Armadura base é igual a 10 mais seus modificadores de Destreza e Constituição. Você pode usar um Escudo e ainda receber este benefício."
+    },
+    "weaponMastery": {
+      "name": "Maestria em Arma",
+      "level": 1,
+      "description": "Seu treinamento com armas permite que você utilize as propriedades de maestria com dois tipos de armas Corpo a Corpo Simples ou Marciais à sua escolha. Sempre que completar um Descanso Longo, você pode praticar movimentos com armas e alterar uma dessas escolhas de armas."
+    }
+  },
+  "subclasses": {
+    "worldTree": {
+      "name": "Trilha da Árvore do Mundo",
+      "title": "Entrelace as Raízes e Ramos do Multiverso",
+      "description": "Bárbaros que seguem a Trilha da Árvore do Mundo conectam-se à árvore cósmica Yggdrasil por meio de sua Fúria. Essa árvore cresce entre os Planos Externos, ligando-os entre si e ao Plano Material. Esses Bárbaros extraem a magia da árvore para obter vitalidade e viajar entre dimensões.",
+      "features": {
+        "3": {
+          "name": "Vitalidade da Árvore",
+          "description": "Sua Fúria se conecta à força vital da Árvore do Mundo.",
+          "benefits": [
+            "Força Revigorante: No início de cada um dos seus turnos enquanto sua Fúria estiver ativa, você pode escolher outra criatura a até 3 metros de você para receber Pontos de Vida Temporários.",
+            "Surto de Vitalidade: Ao ativar sua Fúria, você recebe um número de Pontos de Vida Temporários igual ao seu nível de Bárbaro."
+          ]
+        },
+        "6": {
+          "name": "Ramos da Árvore",
+          "description": "Sempre que uma criatura que você pode ver começar o turno a até 9 metros de você enquanto sua Fúria estiver ativa, você pode executar uma Reação para convocar ramos espectrais da Árvore do Mundo ao redor dela."
+        },
+        "10": {
+          "name": "Raízes Devastadoras",
+          "description": "Durante o seu turno, seu alcance é 3 metros maior com qualquer arma corpo a corpo que tenha a propriedade Pesada ou Versátil."
+        },
+        "14": {
+          "name": "Percorrer a Árvore",
+          "description": "Ao ativar sua Fúria e, como uma Ação Bônus enquanto ela estiver ativa, você pode se teleportar a até 18 metros para um espaço desocupado à sua vista."
+        }
+      }
+    },
+    "berserker": {
+      "name": "Trilha do Berserker",
+      "title": "Canalize sua Fúria em um Frenesi Violento",
+      "description": "Bárbaros que seguem a Trilha do Berserker direcionam sua Fúria principalmente para a violência. Essa trilha é de um frenesi desenfreado, e eles se deleitam no caos da batalha ao permitir que sua Fúria os domine e fortaleça.",
+      "features": {
+        "3": {
+          "name": "Frenesi",
+          "description": "Se você usar Ataque Imprudente enquanto sua Fúria estiver ativa, você causa dano adicional ao primeiro alvo atingido no seu turno com um ataque baseado em Força."
+        },
+        "6": {
+          "name": "Fúria Irracional",
+          "description": "Você tem Imunidade às condições Amedrontado e Enfeitiçado enquanto sua Fúria estiver ativa."
+        },
+        "10": {
+          "name": "Retaliação",
+          "description": "Quando você sofrer dano de uma criatura que esteja a até 1,5 metro de você, pode executar uma Reação para realizar um ataque corpo a corpo contra essa criatura."
+        },
+        "14": {
+          "name": "Presença Intimidante",
+          "description": "Como uma Ação Bônus, você pode causar terror em outros com sua presença ameaçadora e poder primitivo."
+        }
+      }
+    },
+    "wildHeart": {
+      "name": "Trilha do Coração Selvagem",
+      "title": "Ande em Comunhão com o Mundo Animal",
+      "description": "Bárbaros que seguem a Trilha do Coração Selvagem se consideram parentes dos animais. Esses Bárbaros aprendem meios mágicos de se comunicar com os animais, e sua Fúria intensifica essa conexão com eles, preenchendo-os com poder sobrenatural.",
+      "features": {
+        "3": {
+          "name": "Arauto da Fauna",
+          "description": "Você pode conjurar as magias Falar com Animais e Sentido Feral, mas apenas como Rituais."
+        },
+        "3": {
+          "name": "Fúria dos Selvagens",
+          "description": "Sua Fúria se conecta ao poder primitivo dos animais.",
+          "options": [
+            "Águia: Ao ativar sua Fúria, você pode executar as ações Correr e Desengajar como parte dessa Ação Bônus.",
+            "Lobo: Enquanto sua Fúria estiver ativa, seus aliados têm Vantagem em jogadas de ataque contra qualquer inimigo seu a até 1,5 metro de você.",
+            "Urso: Enquanto em Fúria, você tem Resistência a todos os tipos de dano, exceto Energético, Necrótico, Psíquico e Radiante."
+          ]
+        },
+        "6": {
+          "name": "Aspecto dos Selvagens",
+          "description": "Você recebe uma das seguintes opções à sua escolha. Sempre que completar um Descanso Longo, você pode alterar sua escolha.",
+          "options": [
+            "Coruja: Você tem Visão no Escuro com um alcance de 18 metros.",
+            "Pantera: Você tem um Deslocamento de Escalada igual ao seu Deslocamento.",
+            "Salmão: Você tem um Deslocamento de Natação igual ao seu Deslocamento."
+          ]
+        },
+        "10": {
+          "name": "Arauto da Natureza",
+          "description": "Você pode conjurar a magia Comunhão com a Natureza, mas apenas como um Ritual."
+        },
+        "14": {
+          "name": "Poder dos Selvagens",
+          "description": "Sempre que você ativar sua Fúria, recebe uma das seguintes opções à sua escolha.",
+          "options": [
+            "Carneiro: Enquanto sua Fúria estiver ativa, você pode impor a condição Caído em uma criatura Grande ou menor quando você a atinge com um ataque corpo a corpo.",
+            "Falcão: Enquanto sua Fúria estiver ativa, você tem um Deslocamento de Voo igual ao seu Deslocamento se não estiver usando nenhuma armadura.",
+            "Leão: Enquanto sua Fúria estiver ativa, qualquer um de seus inimigos a até 1,5 metro de você tem Desvantagem em jogadas de ataque contra alvos que não sejam você ou outro Bárbaro que tenha essa opção ativa."
+          ]
+        }
+      }
+    },
+    "zealot": {
+      "name": "Trilha do Fanático",
+      "title": "Fúria em Êxtase com um Deus",
+      "description": "Bárbaros que seguem a Trilha do Fanático recebem bênçãos de um deus ou panteão. Esses Bárbaros experimentam sua Fúria como um episódio extático de união divina que os infunde com poder.",
+      "features": {
+        "3": {
+          "name": "Campeão dos Deuses",
+          "description": "Uma entidade divina assegura que você possa continuar lutando. Você tem uma reserva de quatro d12s que pode gastar para se curar."
+        },
+        "3": {
+          "name": "Fúria Divina",
+          "description": "Você pode canalizar poder divino em seus golpes. Em cada um dos seus turnos, enquanto sua Fúria estiver ativa, a primeira criatura que você atingir com uma arma ou com um Ataque Desarmado sofre dano adicional igual a 1d6 pontos mais metade do seu nível de Bárbaro (arredondado para baixo)."
+        },
+        "6": {
+          "name": "Concentração Fanática",
+          "description": "Uma vez por Fúria ativa, se você falhar em uma salvaguarda, pode jogá-la novamente com um bônus igual ao seu bônus de Dano da Fúria."
+        },
+        "10": {
+          "name": "Presença Zelosa",
+          "description": "Como uma Ação Bônus, você libera um grito de batalha infundido com energia divina. Até dez outras criaturas à sua escolha a até 18 metros de você obtêm Vantagem em jogadas de ataque e salvaguardas até o início do seu próximo turno."
+        },
+        "14": {
+          "name": "Fúria dos Deuses",
+          "description": "Ao ativar sua Fúria, pode assumir a forma de um combatente divino. Essa forma dura 1 minuto ou até você atingir 0 Pontos de Vida.",
+          "benefits": [
+            "Resistência: Você tem Resistência a dano Necrótico, Psíquico e Radiante.",
+            "Revivificação: Quando uma criatura a até 9 metros de você é reduzida a 0 Pontos de Vida, você pode executar uma Reação para gastar um uso da sua Fúria e, em vez disso, mudar os Pontos de Vida do alvo para um número igual ao seu nível de Bárbaro.",
+            "Voo: Você tem um Deslocamento de Voo igual ao seu Deslocamento e pode pairar."
+          ]
+        }
+      }
+    }
+  }
+} 

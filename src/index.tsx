@@ -14,7 +14,7 @@ import TutorialFicha from './pages/TutorialFicha/TutorialFicha';
 import ListaMagias from './pages/Magias/Magias';
 import FichaPersonagem from './pages/FichaPersonagem/FichaPersonagem';
 import Classes from './pages/Classes/Classes';
-
+import Detalhes from './pages/Classes/Detalhes/Detalhes';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -30,7 +30,7 @@ root.render(
           <Route path='/ficha-personagem' element={<FichaPersonagem />} />
           <Route path='/classes'>
             <Route index element={<Classes />}/>
-            <Route path='/classes/:className' element={<Classes />}/>
+            <Route path='/classes/barbarian' element={<Detalhes />}/>
           </Route>
         </Route>
       </Routes>
