@@ -1,0 +1,45 @@
+.collapsable-table-container {
+  margin: 1em 0;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--card-background, var(--background-color));
+}
+
+.collapsable-table-header {
+  cursor: pointer;
+  padding: 0.75em 1em;
+  background: var(--collapsable-table-header-bg, var(--md-background-dark-surface-2));
+  color: var(--text-color);
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  user-select: none;
+}
+
+.collapsable-table-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.collapsable-table-th {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.5em;
+  text-align: left;
+  background: var(--collapsable-table-header-bg, var(--md-background-dark-surface-2));
+  color: var(--text-color);
+}
+
+.collapsable-table-td {
+  padding: 0.5em;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.collapsable-table-row-even {
+  background: var(--collapsable-table-row-even-bg, var(--md-background-dark-surface));
+}
+
+.collapsable-table-row-odd {
+  background: var(--collapsable-table-row-odd-bg, var(--card-background, var(--background-color)));
+} 

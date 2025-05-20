@@ -72,6 +72,11 @@
 
   /* Add smooth transitions for theme changes */
   --theme-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+  /* New variables for collapsable table */
+  --collapsable-table-header-bg: var(--md-background-dark-surface-2);
+  --collapsable-table-row-even-bg: var(--md-background-dark-surface);
+  --collapsable-table-row-odd-bg: var(--card-background, var(--background-color));
 }
 
 /* Dark theme variables */
@@ -84,6 +89,16 @@
   --card-background-darker: var(--md-background-dark-surface);
   --primary-color: var(--md-primary-300);
   --secondary-color: var(--md-secondary-300);
+  --collapsable-table-header-bg: var(--md-background-dark-surface-2);
+  --collapsable-table-row-even-bg: var(--md-background-dark-surface);
+  --collapsable-table-row-odd-bg: var(--card-background, var(--background-color));
+}
+
+/* Light theme variables */
+[data-theme="light"] {
+  --collapsable-table-header-bg: var(--md-neutral-200);
+  --collapsable-table-row-even-bg: var(--md-neutral-100);
+  --collapsable-table-row-odd-bg: var(--card-background, var(--background-color));
 }
 
 /* Add transitions to all theme-related properties */
