@@ -14,6 +14,7 @@ export const LayoutDefault = () => {
         <NavLink className='nav-item' to="/lista-magias">Lista de Magias</NavLink>
         <NavLink className='nav-item' to="/ficha-personagem">Ficha de Personagem</NavLink>
         <NavLink className='nav-item' to="/classes">Classes</NavLink>
+        <NavLink className='nav-item' to="/antecedentes">Antecedentes</NavLink>
       </nav>
       <main className='content'>
         <Outlet />

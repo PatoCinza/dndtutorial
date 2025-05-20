@@ -8,13 +8,14 @@ import { ThemeProvider } from './contexts/ThemeContext';
 // Layout
 import { LayoutDefault } from './components/LayoutDefault/LayoutDefault';
 // Pages
-import AppIndex from './pages/AppIndex/App';
+import AppIndex from './pages/Home/App';
 import ComoJogar from './pages/ComoJogar/ComoJogar';
 import TutorialFicha from './pages/TutorialFicha/TutorialFicha';
 import ListaMagias from './pages/Magias/Magias';
 import FichaPersonagem from './pages/FichaPersonagem/FichaPersonagem';
 import Classes from './pages/Classes/Classes';
 import Detalhes from './pages/Classes/Detalhes/Detalhes';
+import Antecedentes from './pages/Antecedentes/Antecedentes';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -28,6 +29,7 @@ root.render(
           <Route path='/tutorial-ficha' element={<TutorialFicha />} />
           <Route path='/lista-magias' element={<ListaMagias />} />
           <Route path='/ficha-personagem' element={<FichaPersonagem />} />
+          <Route path='/antecedentes' element={<Antecedentes />} />
           <Route path='/classes'>
             <Route index element={<Classes />}/>
             <Route path='/classes/barbarian' element={<Detalhes />}/>

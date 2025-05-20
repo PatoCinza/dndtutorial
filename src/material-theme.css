@@ -80,7 +80,8 @@
   --text-color: var(--md-text-primary-dark);
   --button-color: var(--md-primary-300);
   --border-color: var(--md-neutral-700);
-  --card-background: var(--md-background-dark-surface);
+  --card-background: var(--md-background-dark-surface-3);
+  --card-background-darker: var(--md-background-dark-surface);
   --primary-color: var(--md-primary-300);
   --secondary-color: var(--md-secondary-300);
 }

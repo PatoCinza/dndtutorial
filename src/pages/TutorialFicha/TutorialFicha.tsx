@@ -5,8 +5,11 @@ import ExperienceTable from '../../assets/experience-table.png'
 import StatsTable from '../../assets/stats-table.png'
 import { LinkLivroJogador } from '../../components/Links/LinkLivroJogador';
 import './TutorialFicha.css'
+import { NavLink } from 'react-router-dom';
 
 function TutorialFicha() {
+    const linkClasses = (<NavLink to='/classes'>classes</NavLink>)
+    const linkAntecedentes = (<NavLink to='/antecedentes'>antecedentes</NavLink>)
   return (
     <div className='tutorial-sheet'>
         <section className='downloads'>
@@ -20,7 +23,7 @@ function TutorialFicha() {
                     <p>Nome do Personagem: Mais autoexplicativo impossível</p>
                 </li>
                 <li>
-                    <p>Classe e nível: A classe é a profissão do seu personagem podendo ser escolhido entre ''classes'' e o nível será importante para sabermos quais habilidades dessa classe seu personagem já desbloqueou </p>
+                    <p>{linkClasses} e nível: A classe é a profissão do seu personagem podendo ser escolhido entre {linkClasses} e o nível será importante para sabermos quais habilidades dessa classe seu personagem já desbloqueou </p>
                     <p className='ref-book'>A lista de classes vai da página 46 à 121 no <LinkLivroJogador />, mas eventualmente eu vou escrever aqui</p>
                 </li>
                 <li>
@@ -28,7 +31,7 @@ function TutorialFicha() {
                     <p className='ref-book'>A lista de raças vai da página 17 à 43 no <LinkLivroJogador />, mas eu vou escrever aqui tbm</p>
                 </li>
                 <li>
-                    <p>Antecedente: Toda história tem um início. Os antecedentes de seus personagens revela de onde eles vieram, como se tornaram aventureiros e seu lugar no mundo. Escolher um antecedente fornece a você importantes pistas sobre a identidade de seu personagem. A questão mais importante a ser respondida pelo seu antecedente é o que mudou? Por que você parou de fazer algo do seu antecedente e começou a se aventurar? Aonde você conseguiu recursos para comprar seu equipamento inicial, ou, caso você possua um antecedente que indique riqueza, porque você não tem mais os recursos? Como você aprendeu as perícias que compõem sua classe? O que o separa das pessoas ordinárias que compartilham do seu mesmo antecedente?</p>
+                    <p>{linkAntecedentes}: Toda história tem um início. Os antecedentes de seus personagens revela de onde eles vieram, como se tornaram aventureiros e seu lugar no mundo. Escolher um antecedente fornece a você importantes pistas sobre a identidade de seu personagem. A questão mais importante a ser respondida pelo seu antecedente é o que mudou? Por que você parou de fazer algo do seu antecedente e começou a se aventurar? Aonde você conseguiu recursos para comprar seu equipamento inicial, ou, caso você possua um antecedente que indique riqueza, porque você não tem mais os recursos? Como você aprendeu as perícias que compõem sua classe? O que o separa das pessoas ordinárias que compartilham do seu mesmo antecedente?</p>
                     <p>Os exemplos de antecedentes do livro concedem a você tanto benefícios concretos (características, proficiências e idiomas), quanto sugestões de interpretação.</p>
                     <p className='ref-book'>A lista de antecedentes está na página 127 do <LinkLivroJogador /></p>
                 </li>
