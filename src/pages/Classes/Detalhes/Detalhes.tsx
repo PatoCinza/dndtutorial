@@ -107,7 +107,7 @@ const Detalhes: React.FC = () => {
 
   return (
     <div className="class-details">
-      <header className="class-header">
+      <header className="class-header-details">
         <h1>{data.name}</h1>
         <h2>{data.title}</h2>
         <p className="class-description">{data.description}</p>

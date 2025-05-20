@@ -26,7 +26,7 @@ interface TraitAbility {
   name: string;
   description: string;
   level?: number;
-  options?: { name: string; description: string }[];
+  options?: { type: string; damage: string; name: string; description: string }[];
 }
 
 interface Species {
@@ -111,7 +111,7 @@ const Especies: React.FC = () => {
               {ab.options && (
                 <ul>
                   {ab.options.map((opt, i) => (
-                    <li key={i}><strong>{opt.name}:</strong> {opt.description}</li>
+                    <li key={i}><strong>{opt?.type || opt?.name}:</strong> {opt?.damage || opt?.description}</li>
                   ))}
                 </ul>
               )}
