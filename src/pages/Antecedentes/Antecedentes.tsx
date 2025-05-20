@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import backgroundsData from './backgrounds.json';
 import './Antecedentes.css';
-
+import Modal from '../../components/Modal/Modal';
+import PreviewCard from '../../components/PreviewCard/PreviewCard';
 interface Background {
   name: string;
   attributeValues: string[];
@@ -33,17 +34,59 @@ const Antecedentes: React.FC = () => {
 
   const data = backgroundsData as BackgroundsData;
 
-  const handleCardClick = (background: Background) => {
+  const expandCard = (background: Background) => {
     setSelectedBackground(background);
   };
 
-  const handleCloseModal = () => {
+  const closeModal = () => {
     setSelectedBackground(null);
   };
 
   const filteredBackgrounds = Object.entries(data.backgrounds).filter(([_, background]) =>
     background.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const body =
+    <>
+      <p className="description">{selectedBackground?.description}</p>
+      <hr />
+        
+      <div className="section">
+      <h3>Valores de Atributo:</h3>
+      <p>{selectedBackground?.attributeValues.join(', ')}</p>
+      </div>
+
+      <div className="section">
+      <h3>Talento:</h3>
+      <p>{selectedBackground?.talent}</p>
+      </div>
+
+      <div className="section">
+      <h3>Proficiências em Perícias:</h3>
+      <p>{selectedBackground?.skillProficiencies.join(', ')}</p>
+      </div>
+
+      <div className="section">
+      <h3>Proficiência com Ferramentas:</h3>
+      <p>{selectedBackground?.toolProficiency}</p>
+      </div>
+
+      <div className="section">
+      <h3>Equipamento:</h3>
+      <div className="equipment-section">
+          <h4>Opção A:</h4>
+          <ul>
+          {selectedBackground?.equipment.optionA.items.map((item, index) => (
+              <li key={index}>{item}</li>
+          ))}
+          </ul>
+      </div>
+      <div className="equipment-section">
+          <h4>Opção B:</h4>
+          <p>{selectedBackground?.equipment.optionB}</p>
+      </div>
+      </div>
+    </>
 
   return (
     <div className="antecedentes-container">
@@ -61,7 +104,6 @@ const Antecedentes: React.FC = () => {
         </ul>
       </section>
 
-      {/* Search Field */}
       <div className="search-container">
         <input
           type="text"
@@ -72,74 +114,24 @@ const Antecedentes: React.FC = () => {
         />
       </div>
 
-      {/* Backgrounds Grid */}
       <div className="backgrounds-grid">
         {filteredBackgrounds.map(([id, background]) => (
-          <div 
-            key={id} 
-            className="background-card"
-            onClick={() => handleCardClick(background)}
-          >
-            <div className="card-header">
-              <h2>{background.name}</h2>
-            </div>
-            <div className="card-preview">
-              <p>{background.description.substring(0, 150)}...</p>
-            </div>
-          </div>
+          <PreviewCard
+            key={id}
+            title={background.name}
+            preview={background.description}
+            onClick={() => expandCard(background)}
+          />
         ))}
       </div>
 
-      {/* Modal */}
       {selectedBackground && (
-        <div className="modal-overlay" onClick={handleCloseModal}>
-          <div className="modal-content" onClick={e => e.stopPropagation()}>
-            <div className="modal-header">
-              <h2>{selectedBackground.name}</h2>
-              <button className="close-button" onClick={handleCloseModal}>×</button>
-            </div>
-            <div className="modal-body">
-              <p className="description">{selectedBackground.description}</p>
-              <hr />
-              
-              <div className="section">
-                <h3>Valores de Atributo:</h3>
-                <p>{selectedBackground.attributeValues.join(', ')}</p>
-              </div>
-
-              <div className="section">
-                <h3>Talento:</h3>
-                <p>{selectedBackground.talent}</p>
-              </div>
-
-              <div className="section">
-                <h3>Proficiências em Perícias:</h3>
-                <p>{selectedBackground.skillProficiencies.join(', ')}</p>
-              </div>
-
-              <div className="section">
-                <h3>Proficiência com Ferramentas:</h3>
-                <p>{selectedBackground.toolProficiency}</p>
-              </div>
-
-              <div className="section">
-                <h3>Equipamento:</h3>
-                <div className="equipment-section">
-                  <h4>Opção A:</h4>
-                  <ul>
-                    {selectedBackground.equipment.optionA.items.map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="equipment-section">
-                  <h4>Opção B:</h4>
-                  <p>{selectedBackground.equipment.optionB}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Modal
+            header={<h2>{selectedBackground?.name}</h2>}
+            body={body}
+            footer={<></>}
+            closeModal={closeModal}
+        />
       )}
     </div>
   );

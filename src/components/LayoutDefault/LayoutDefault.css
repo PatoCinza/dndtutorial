@@ -36,6 +36,7 @@ header {
     text-transform: uppercase;
     transition: var(--theme-transition);
     position: relative;
+    align-content: center;
 }
 
 .nav-item:hover {

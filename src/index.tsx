@@ -16,6 +16,7 @@ import FichaPersonagem from './pages/FichaPersonagem/FichaPersonagem';
 import Classes from './pages/Classes/Classes';
 import Detalhes from './pages/Classes/Detalhes/Detalhes';
 import Antecedentes from './pages/Antecedentes/Antecedentes';
+import Especies from './pages/Especies/Especies';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -30,6 +31,7 @@ root.render(
           <Route path='/lista-magias' element={<ListaMagias />} />
           <Route path='/ficha-personagem' element={<FichaPersonagem />} />
           <Route path='/antecedentes' element={<Antecedentes />} />
+          <Route path='/especies' element={<Especies />} />
           <Route path='/classes'>
             <Route index element={<Classes />}/>
             <Route path='/classes/barbarian' element={<Detalhes />}/>

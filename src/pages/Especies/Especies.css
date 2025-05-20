@@ -1,0 +1,133 @@
+.especies-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--color-on-surface, #fff);
+}
+
+.introduction-section {
+  background: var(--color-surface-variant, #23272f);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.3s;
+}
+
+.introduction-section h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+
+.search-container {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--color-surface, #181a20);
+  color: var(--color-on-surface, #fff);
+  font-size: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  outline: none;
+  transition: background 0.2s;
+}
+
+.species-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 600px) {
+  .species-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .species-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.species-card {
+  background: var(--color-surface-variant, #23272f);
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 1.5rem 1.25rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.species-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  background: var(--color-surface, #181a20);
+}
+.card-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+.card-preview {
+  color: var(--color-on-surface-variant, #bbb);
+  font-size: 1rem;
+}
+
+.section {
+  margin: 1.5rem 0 1rem 0;
+}
+.section h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.section h4 {
+  margin: 0.5rem 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.subtype-block, .legacy-block {
+  background: var(--color-surface-variant, #23272f);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.legacy-features {
+  margin: 0.5rem 0 0.5rem 1rem;
+  padding-left: 1rem;
+}
+
+.features-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  background: var(--color-surface, #181a20);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.features-table th, .features-table td {
+  border: 1px solid var(--color-outline, #333);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+.features-table th {
+  background: var(--color-primary-container, #2a2d3a);
+  color: var(--color-on-primary-container, #fff);
+}
+.features-table td {
+  color: var(--color-on-surface, #fff);
+}
+
+@media (max-width: 600px) {
+  .introduction-section, .species-card, .subtype-block, .legacy-block {
+    padding: 1rem 0.5rem;
+  }
+} 

@@ -1,0 +1,440 @@
+{
+  "introduction": {
+    "description": "As espécies em D&D representam diferentes raças e linhagens que habitam o multiverso. Cada espécie possui características únicas, traços especiais e habilidades que as distinguem umas das outras. Ao escolher uma espécie para seu personagem, você está definindo sua herança e características físicas básicas, além de ganhar traços especiais que podem incluir habilidades mágicas, resistências naturais ou outras capacidades sobrenaturais."
+  },
+  "species": {
+    "aasimar": {
+      "name": "Aasimar",
+      "description": "Aasimar são mortais que carregam uma centelha dos Planos Superiores dentro de suas almas. Sejam descendentes de um ser angelical ou infundido com poder celestial, eles podem impulsionar essa centelha para trazer luz, cura e fúria celestial. Sua conexão com os planos superiores lhes confere habilidades únicas e uma aparência distintiva que os marca como diferentes dos mortais comuns.",
+      "appearance": "Um aasimar pode surgir entre qualquer população de mortais. Eles se parecem com seus pais, mas vivem até 160 anos e têm características que sugerem sua herança celestial, como sardas metálicas, olhos luminosos, uma auréola ou a cor da pele de um anjo (prata, verde opalescente ou vermelho acobreado). Sua presença muitas vezes inspira admiração e reverência, mesmo entre aqueles que não conhecem sua verdadeira natureza.",
+      "traits": {
+        "creatureType": "Humanoide",
+        "size": "Médio (cerca de 1,20-2,10 metros de altura) ou Pequeno (cerca de 0,60-1,20 metro de altura)",
+        "movement": "9 metros",
+        "abilities": [
+          {
+            "name": "Resistência Celestial",
+            "description": "Você tem Resistência a dano Necrótico e Radiante. Sua conexão com os planos superiores lhe protege contra as energias da morte e da luz divina.",
+            "level": 1
+          },
+          {
+            "name": "Visão no Escuro",
+            "description": "Você tem Visão no Escuro com um alcance de 18 metros. Sua visão celestial permite que você veja na escuridão total como se fosse penumbra, e na penumbra como se fosse luz plena.",
+            "level": 1
+          },
+          {
+            "name": "Mãos Curativas",
+            "description": "Você executa uma ação Usar Magia, toca uma criatura e joga um número de d4s igual ao seu Bônus de Proficiência. A criatura restaura número de Pontos de Vida igual ao total jogado. Após usar esse traço, você não pode usá-lo novamente até completar um Descanso Longo. Este poder de cura é um dom direto dos planos superiores.",
+            "level": 1
+          },
+          {
+            "name": "Portador da Luz",
+            "description": "Você conhece o truque da Luz. Carisma é seu atributo de conjuração para isso. Sua conexão celestial lhe permite manipular a luz natural de forma sobrenatural.",
+            "level": 1
+          },
+          {
+            "name": "Revelação Celestial",
+            "description": "No nível 3 de personagem, você pode se transformar como uma Ação Bônus usando uma das opções abaixo (escolha a opção cada vez que você se transformar). A transformação se mantém por 1 minuto ou até você a encerrar (nenhuma ação é necessária). Uma vez que você se transforma, não pode fazê-lo novamente até completar um Descanso Longo. Esta transformação representa o despertar de seu potencial celestial.",
+            "level": 3,
+            "options": [
+              {
+                "name": "Asas Celestiais",
+                "description": "Duas asas espectrais brotam em suas costas temporariamente. Até que a transformação se encerre, você tem um Deslocamento de Voo igual ao seu Deslocamento. Estas asas são feitas de pura energia celestial."
+              },
+              {
+                "name": "Manto Necrótico",
+                "description": "Seus olhos se tornam brevemente poças de escuridão, e asas que não voam brotam em suas costas temporariamente. Criaturas que não sejam seus aliados a até 3 metros de você devem ser bem-sucedidas em uma salvaguarda de Carisma (CD 8 + seu modificador de Carisma e seu Bônus de Proficiência) ou têm a condição Amedrontado até o final do seu próximo turno. Este poder demonstra sua capacidade de canalizar tanto a luz quanto a escuridão."
+              },
+              {
+                "name": "Transfiguração Radiante",
+                "description": "Luz abrasadora irradia temporariamente de seus olhos e boca. Pela duração da transformação, você emite Luz Plena em um raio de 3 metros e Meia-luz por mais 3 metros, e no fim de cada um de seus turnos, cada criatura a até 3 metros de você sofre dano Radiante igual ao seu Bônus de Proficiência. Esta é a manifestação mais pura de sua herança celestial."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "dwarf": {
+      "name": "Anão",
+      "description": "Anões foram criados da terra nos tempos antigos por uma divindade da forja, conhecida por diversos nomes como Moradin e Reorx. Esse deus conferiu aos anões uma afinidade por pedra, metal e pela vida subterrânea, além de torná-los resilientes como as montanhas, com uma expectativa de vida de cerca de 350 anos. Sua conexão com a terra e suas habilidades excepcionais em metalurgia e mineração os tornaram mestres artesãos e guerreiros formidáveis.",
+      "appearance": "Baixos e frequentemente barbudos, os anões originais esculpiram cidades e fortalezas nas montanhas e sob a terra. Sua estatura compacta e musculosa, combinada com sua resistência natural, os torna excelentes mineradores e guerreiros. Suas barbas são frequentemente entrançadas e decoradas, servindo como símbolo de status e orgulho cultural.",
+      "traits": {
+        "creatureType": "Humanoide",
+        "size": "Médio (cerca de 1,20-1,50 metro de altura)",
+        "movement": "9 metros",
+        "abilities": [
+          {
+            "name": "Visão no Escuro",
+            "description": "Você tem Visão no Escuro com um alcance de 36 metros. Adaptados à vida subterrânea, os anões podem ver na escuridão total como se fosse penumbra, e na penumbra como se fosse luz plena.",
+            "level": 1
+          },
+          {
+            "name": "Resistência a Toxinas",
+            "description": "Você tem Resistência a Dano Venenoso. Você também tem Vantagem nas salvaguardas que realizar para evitar ou encerrar a condição Envenenado. Esta resistência é um legado de sua criação nas profundezas da terra.",
+            "level": 1
+          },
+          {
+            "name": "Tenacidade Anã",
+            "description": "Seus Pontos de Vida máximos aumentam em 1, e novamente em 1, sempre que você atinge um nível de personagem. Esta robustez é uma marca registrada dos anões, tornando-os mais resistentes que outras raças.",
+            "level": 1
+          },
+          {
+            "name": "Conhecimento de Pedras",
+            "description": "Como uma Ação Bônus, você adquire Sismiconsciência com um alcance de 18 metros por 10 minutos. Você deve estar em, ou tocar, uma superfície de pedra para usar a Sismiconsciência. A pedra pode ser natural ou trabalhada. Esta habilidade representa sua conexão inata com a terra e as pedras.",
+            "level": 1
+          }
+        ]
+      }
+    },
+    "dragonborn": {
+      "name": "Draconato",
+      "description": "Os ancestrais dos draconatos nasceram dos ovos de dragões cromáticos e metálicos. Uma narrativa diz que esses ovos foram abençoados pelos deuses dracônicos Bahamut e Tiamat, que desejavam criar seres à sua imagem no multiverso. Esta herança dracônica lhes confere características únicas e poderes que refletem sua linhagem ancestral, tornando-os guerreiros formidáveis e portadores de magia dracônica.",
+      "appearance": "Os draconatos parecem dragões bípedes sem asas — escamosos, de olhos brilhantes, com ossos grossos e chifres na cabeça — e sua coloração e outras características lembram seus ancestrais dracônicos. Sua aparência imponente e características dracônicas os tornam facilmente reconhecíveis, inspirando tanto admiração quanto temor.",
+      "traits": {
+        "creatureType": "Humanoide",
+        "size": "Médio (cerca de 1,50-2,10 metros de altura)",
+        "movement": "9 metros",
+        "abilities": [
+          {
+            "name": "Herança Dracônica",
+            "description": "Sua linhagem deriva de um progenitor dracônico. Escolha o tipo de dragão da tabela Herança Dracônica. Esta escolha determina sua aparência, resistência e o tipo de dano de seu ataque de sopro, refletindo a natureza de seu ancestral dracônico.",
+            "level": 1,
+            "options": [
+              {"type": "Azul", "damage": "Elétrico"},
+              {"type": "Branco", "damage": "Gélido"},
+              {"type": "Bronze", "damage": "Elétrico"},
+              {"type": "Cobre", "damage": "Ácido"},
+              {"type": "Latão", "damage": "Ígneo"},
+              {"type": "Negro", "damage": "Ácido"},
+              {"type": "Ouro", "damage": "Ígneo"},
+              {"type": "Prata", "damage": "Gélido"},
+              {"type": "Verde", "damage": "Venenoso"},
+              {"type": "Vermelho", "damage": "Ígneo"}
+            ]
+          },
+          {
+            "name": "Ataque de Sopro",
+            "description": "Ao executar a ação Atacar no seu turno, você pode substituir um de seus ataques por uma emissão de energia mágica em um Cone de 4,5 metros ou em uma Linha de 9 metros de largura. Este poder é uma manifestação direta de sua herança dracônica, permitindo canalizar a energia elemental de seu ancestral.",
+            "level": 1
+          },
+          {
+            "name": "Resistência a Dano",
+            "description": "Você tem Resistência ao tipo de dano determinado por seu traço Herança Dracônica. Esta resistência é um legado de sua linhagem dracônica, protegendo-o contra o elemento associado a seu ancestral.",
+            "level": 1
+          },
+          {
+            "name": "Visão no Escuro",
+            "description": "Você tem Visão no Escuro com um alcance de 18 metros. Sua visão dracônica lhe permite ver na escuridão total como se fosse penumbra, e na penumbra como se fosse luz plena.",
+            "level": 1
+          },
+          {
+            "name": "Voo Dracônico",
+            "description": "No nível 5 de personagem, você pode canalizar magia dracônica para beneficiar de um voo temporário. Este poder representa o despertar de sua herança dracônica, permitindo-lhe manifestar asas de energia mágica.",
+            "level": 5
+          }
+        ]
+      }
+    },
+    "elf": {
+      "name": "Elfo",
+      "description": "Criados por Corellon, os primeiros elfos podiam mudar de forma à vontade. Essa habilidade foi perdida quando Corellon os amaldiçoou por conspirarem com Lolth, que falhou em usurpar seu domínio. Apesar dessa perda, os elfos mantêm uma conexão profunda com a magia e a natureza, vivendo vidas longas e desenvolvendo habilidades únicas que refletem sua herança feérica.",
+      "appearance": "Elfos possuem orelhas pontudas e não têm pelos faciais ou corporais. Vivem cerca de 750 anos e não dormem, mas entram em transe para descansar, mantendo a consciência do ambiente enquanto revisitam memórias e meditações. Sua aparência etérea e movimentos graciosos os distinguem de outras raças, enquanto sua longevidade lhes dá uma perspectiva única sobre o mundo.",
+      "subtypes": [
+        {
+          "name": "Alto Elfo",
+          "description": "Altos elfos receberam magia das encruzilhadas entre Faéria e o Plano Material. Sua conexão com a magia é mais forte que a de outros elfos, e eles são conhecidos por sua elegância e sofisticação.",
+          "featuresByLevel": [
+            { "level": 1, "feature": "Você conhece o truque Prestidigitação Arcana. Sempre que completar um Descanso Longo, você pode substituir este truque por um truque diferente da lista de magias de Mago." },
+            { "level": 3, "feature": "Detectar Magia" },
+            { "level": 5, "feature": "Passo Nebuloso" }
+          ]
+        },
+        {
+          "name": "Drow",
+          "description": "Os drow normalmente residem em Umbraeterna, que os moldou. Adaptados à vida nas profundezas, eles desenvolveram características únicas e habilidades que refletem seu ambiente subterrâneo.",
+          "featuresByLevel": [
+            { "level": 1, "feature": "O alcance da sua Visão no Escuro aumenta para 36 metros. Você também conhece o truque Luzes Dançantes." },
+            { "level": 3, "feature": "Fogo das Fadas" },
+            { "level": 5, "feature": "Escuridão" }
+          ]
+        },
+        {
+          "name": "Elfo Silvestre",
+          "description": "Elfos silvestres, também conhecidos como elfos selvagens, elfos verdes e elfos dos bosques, carregam a magia das florestas primitivas. Sua conexão com a natureza é profunda, e eles são mestres em sobrevivência e caça.",
+          "featuresByLevel": [
+            { "level": 1, "feature": "Seu Deslocamento aumenta para 10,5 metros. Você também conhece o truque Arte Druídica." },
+            { "level": 3, "feature": "Passos Largos" },
+            { "level": 5, "feature": "Passos Sem Rastro" }
+          ]
+        }
+      ],
+      "traits": {
+        "creatureType": "Humanoide",
+        "size": "Médio (cerca de 1,50-1,80 metro de altura)",
+        "movement": "9 metros",
+        "abilities": [
+          {
+            "name": "Visão no Escuro",
+            "description": "Você tem Visão no Escuro com um alcance de 18 metros. Sua visão élfica lhe permite ver na escuridão total como se fosse penumbra, e na penumbra como se fosse luz plena.",
+            "level": 1
+          },
+          {
+            "name": "Linhagem Élfica",
+            "description": "Você é de uma linhagem que lhe concede habilidades sobrenaturais. Esta herança feérica se manifesta em suas habilidades mágicas e resistências naturais.",
+            "level": 1
+          },
+          {
+            "name": "Ancestralidade Feérica",
+            "description": "Você tem Vantagem ao realizar salvaguardas para evitar ou encerrar a condição Enfeitiçado. Sua natureza feérica lhe protege contra magias de encantamento.",
+            "level": 1
+          },
+          {
+            "name": "Sentidos Aguçados",
+            "description": "Você tem proficiência na perícia Intuição, Percepção ou Sobrevivência. Sua longevidade e conexão com a natureza lhe deram sentidos excepcionalmente aguçados.",
+            "level": 1
+          },
+          {
+            "name": "Transe",
+            "description": "Você pode completar um Descanso Longo em 4 horas ao meditar, sem a necessidade de dormir, mantendo a consciência, e magia não pode forçá-lo a dormir. Este estado de transe é uma herança de sua criação por Corellon.",
+            "level": 1
+          }
+        ]
+      }
+    },
+    "gnome": {
+      "name": "Gnomo",
+      "description": "Gnomos são seres mágicos criados por deuses da invenção, ilusões e vida subterrânea. Raramente vistos por outros, devido à sua natureza reservada e à tendência de viver em florestas e tocas. Sua conexão com a magia e sua natureza curiosa os tornam inventores e ilusionistas natos, sempre buscando expandir seus conhecimentos e criar novas maravilhas.",
+      "appearance": "Os gnomos são um povo pequeno com olhos grandes e orelhas pontudas, que vivem cerca de 425 anos. Sua aparência peculiar e expressões faciais animadas refletem sua natureza curiosa e inventiva, enquanto sua longevidade lhes permite acumular vasto conhecimento e experiência.",
+      "traits": {
+        "creatureType": "Humanoide",
+        "size": "Pequeno (cerca de 0,90-1,20 metro de altura)",
+        "movement": "9 metros",
+        "abilities": [
+          {
+            "name": "Visão no Escuro",
+            "description": "Você tem Visão no Escuro com um alcance de 18 metros. Sua visão gnômica lhe permite ver na escuridão total como se fosse penumbra, e na penumbra como se fosse luz plena.",
+            "level": 1
+          },
+          {
+            "name": "Astúcia de Gnomo",
+            "description": "Você tem Vantagem em salvaguardas de Inteligência, Sabedoria e Carisma. Sua mente aguçada e natureza curiosa lhe protegem contra efeitos mentais.",
+            "level": 1
+          },
+          {
+            "name": "Linhagem Gnômica",
+            "description": "Você pertence a uma linhagem que lhe confere habilidades sobrenaturais. Esta herança mágica se manifesta de diferentes formas dependendo de sua linhagem específica.",
+            "level": 1,
+            "options": [
+              {
+                "name": "Gnomo das Rochas",
+                "description": "Você conhece os truques Prestidigitação Arcana e Reparar. Sua conexão com a terra e as pedras lhe permite manipular objetos e realizar pequenos reparos mágicos."
+              },
+              {
+                "name": "Gnomo do Bosque",
+                "description": "Você conhece o truque Ilusão Menor. Você também sempre tem a magia Falar com Animais preparada. Sua conexão com a natureza lhe permite se comunicar com as criaturas da floresta e criar ilusões sutis."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "goliath": {
+      "name": "Golias",
+      "description": "Os golia, que se destacam pela altura, são descendentes distantes de gigantes. Cada um deles possui as bênçãos dos antigos gigantes, manifestadas em diversos dons sobrenaturais. Sua herança gigante lhes confere força e resistência excepcionais, além de habilidades únicas que refletem sua linhagem ancestral.",
+      "appearance": "Os golia possuem características físicas que refletem a aparência de gigantes em suas linhagens familiares. Alguns têm o aspecto de gigantes da pedra, enquanto outros se assemelham a gigantes do fogo. Sua estatura imponente e musculatura poderosa os tornam figuras intimidantes, enquanto suas marcas tribais contam histórias de suas conquistas e linhagem.",
+      "traits": {
+        "creatureType": "Humanoide",
+        "size": "Médio (cerca de 2,10-2,40 metros de altura)",
+        "movement": "10,5 metros",
+        "abilities": [
+          {
+            "name": "Ancestralidade Gigante",
+            "description": "Você é descendente de Gigantes. Sua linhagem determina as habilidades especiais que você pode manifestar, refletindo o poder de seus ancestrais.",
+            "level": 1,
+            "options": [
+              {
+                "name": "Arrepio do Gelo",
+                "description": "Ao atingir um alvo com uma jogada de ataque e causar dano a ele, você também pode infligir 1d6 pontos de dano Gélido a esse alvo. Este poder manifesta a herança dos gigantes do gelo."
+              },
+              {
+                "name": "Queimadura de Fogo",
+                "description": "Ao atingir um alvo com uma jogada de ataque e causar dano a ele, você também pode causar 1d10 pontos de dano Ígneo a esse alvo. Este poder manifesta a herança dos gigantes do fogo."
+              },
+              {
+                "name": "Resistência da Pedra",
+                "description": "Ao sofrer dano, pode executar uma Reação para jogar 1d12. Este poder manifesta a herança dos gigantes da pedra."
+              },
+              {
+                "name": "Salto da Nuvem",
+                "description": "Como uma Ação Bônus, você se teleporta magicamente até 9 metros para um espaço desocupado à sua vista. Este poder manifesta a herança dos gigantes das nuvens."
+              },
+              {
+                "name": "Tombo da Colina",
+                "description": "Ao atingir uma criatura Grande ou menor com uma jogada de ataque e causar dano a ela, você pode impor a esse alvo a condição Caído. Este poder manifesta a herança dos gigantes das colinas."
+              },
+              {
+                "name": "Trovão da Tempestade",
+                "description": "Ao sofrer dano de uma criatura a até 18 metros de você, você pode executar uma Reação para causar 1d8 pontos de dano Trovejante a essa criatura. Este poder manifesta a herança dos gigantes das tempestades."
+              }
+            ]
+          },
+          {
+            "name": "Forma Grande",
+            "description": "A partir do nível 5 de personagem, você pode alterar seu tamanho para Grande como uma Ação Bônus. Este poder representa o despertar de sua herança gigante, permitindo-lhe manifestar temporariamente o tamanho de seus ancestrais.",
+            "level": 5
+          },
+          {
+            "name": "Porte Poderoso",
+            "description": "Você tem Vantagem em qualquer teste de atributo que realizar para encerrar a condição Imobilizado. Sua força e resistência herdadas dos gigantes lhe permitem quebrar facilmente restrições físicas.",
+            "level": 1
+          }
+        ]
+      }
+    },
+    "human": {
+      "name": "Humano",
+      "description": "Presentes em todo o multiverso, os humanos são variados e numerosos, buscando alcançar o máximo em seus anos de vida. Sua ambição e habilidade são admiradas, respeitadas e temidas em muitos mundos. Apesar de sua vida relativamente curta, os humanos são conhecidos por sua adaptabilidade e capacidade de superar desafios através de pura determinação e engenhosidade.",
+      "appearance": "Os humanos são tão diversos em aparência quanto as populações da Terra e adoram muitos deuses. Sua variedade física e cultural é uma de suas maiores forças, permitindo-lhes se adaptar a diferentes ambientes e situações.",
+      "traits": {
+        "creatureType": "Humanoide",
+        "size": "Médio (cerca de 1,20-2,10 metros de altura) ou Pequeno (cerca de 0,60-1,20 metro de altura)",
+        "movement": "9 metros",
+        "abilities": [
+          {
+            "name": "Eficiente",
+            "description": "Você adquire Inspiração Heroica sempre que completar um Descanso Longo. Esta habilidade reflete a capacidade humana de se recuperar rapidamente e encontrar novas forças para enfrentar desafios.",
+            "level": 1
+          },
+          {
+            "name": "Hábil",
+            "description": "Você adquire proficiência em uma perícia à sua escolha. Esta versatilidade é uma marca registrada dos humanos, que são conhecidos por sua capacidade de aprender e se adaptar.",
+            "level": 1
+          },
+          {
+            "name": "Versátil",
+            "description": "Você adquire um talento de Origem à sua escolha. Esta flexibilidade permite que os humanos desenvolvam habilidades únicas que complementam suas outras capacidades.",
+            "level": 1
+          }
+        ]
+      }
+    },
+    "orc": {
+      "name": "Orc",
+      "description": "Os orcs atribuem sua origem a Gruumsh, um poderoso deus que percorria os vastos espaços do Plano Material. Ele dotou seus filhos com habilidades para explorar planícies, cavernas e mares agitados. Sua natureza feroz e resistência física os tornam guerreiros formidáveis, enquanto sua conexão com Gruumsh lhes confere poderes únicos de combate e sobrevivência.",
+      "appearance": "Orcs são, em média, altos e robustos, com pele cinza, orelhas pontiagudas e caninos inferiores proeminentes como pequenas presas. Sua aparência imponente e características físicas distintivas os tornam facilmente reconhecíveis, inspirando tanto respeito quanto temor.",
+      "traits": {
+        "creatureType": "Humanoide",
+        "size": "Médio (cerca de 1,80-2,10 metros de altura)",
+        "movement": "9 metros",
+        "abilities": [
+          {
+            "name": "Pico de Adrenalina",
+            "description": "Você pode executar a ação Correr como uma Ação Bônus. Ao executar isso, você adquire um número de Pontos de Vida Temporários igual ao seu Bônus de Proficiência. Este poder representa a fúria de batalha inata dos orcs, permitindo-lhes canalizar sua energia em momentos críticos.",
+            "level": 1
+          },
+          {
+            "name": "Visão no Escuro",
+            "description": "Você tem Visão no Escuro com um alcance de 36 metros. Sua visão orc lhe permite ver na escuridão total como se fosse penumbra, e na penumbra como se fosse luz plena.",
+            "level": 1
+          },
+          {
+            "name": "Vigor Implacável",
+            "description": "Ao ser reduzido a 0 Pontos de Vida, mas não morto imediatamente, você fica com 1 Ponto de Vida. Esta resistência é um dom de Gruumsh, permitindo que seus filhos continuem lutando mesmo quando outros já teriam caído.",
+            "level": 1
+          }
+        ]
+      }
+    },
+    "halfling": {
+      "name": "Pequenino",
+      "description": "Guiados por deuses que valorizam a vida, o lar e a lareira, os pequeninos buscam paraísos bucólicos onde família e comunidade moldam suas vidas. Sua natureza otimista e corajosa, combinada com sua agilidade natural, os torna excelentes aventureiros, apesar de seu tamanho modesto.",
+      "appearance": "Seu tamanho, semelhante ao de uma criança humana, os ajuda a passar despercebidos nas multidões e a se espremer em espaços apertados. Sua aparência jovial e expressões faciais animadas refletem sua natureza otimista e amigável.",
+      "traits": {
+        "creatureType": "Humanoide",
+        "size": "Pequeno (cerca de 0,60-0,90 metro de altura)",
+        "movement": "9 metros",
+        "abilities": [
+          {
+            "name": "Corajoso",
+            "description": "Você tem Vantagem nas salvaguardas que realizar para evitar ou encerrar a condição Amedrontado. Sua natureza corajosa e otimista lhe protege contra o medo.",
+            "level": 1
+          },
+          {
+            "name": "Agilidade Pequenina",
+            "description": "Você pode se mover pelo espaço de qualquer criatura que seja um tamanho maior que você, mas você não pode parar no mesmo espaço. Esta agilidade é uma marca registrada dos pequeninos, permitindo-lhes se mover com facilidade em situações difíceis.",
+            "level": 1
+          },
+          {
+            "name": "Sorte",
+            "description": "Ao tirar 1 no D20 de um Teste de D20, você pode jogar novamente o dado e deve usar a nova jogada. Esta sorte é um dom dos deuses dos pequeninos, protegendo seus filhos em momentos de necessidade.",
+            "level": 1
+          },
+          {
+            "name": "Furtividade Natural",
+            "description": "Você pode executar a ação Esconder mesmo quando estiver encoberto apenas por uma criatura que seja pelo menos um tamanho maior que você. Esta habilidade reflete a capacidade dos pequeninos de passar despercebidos.",
+            "level": 1
+          }
+        ]
+      }
+    },
+    "tiefling": {
+      "name": "Tiferino",
+      "description": "Os tiferinos nascem nos Planos Inferiores ou têm ancestrais que se originaram lá. Estão ligados por sangue a um diabo, demônio ou outro Ínfero. Esta herança ínfera lhes confere características únicas e poderes que refletem sua linhagem, enquanto sua natureza moral é determinada por suas próprias escolhas, não por sua herança.",
+      "appearance": "Essa conexão representa o legado ínfero do tiferino, prometendo poder, mas não influi em sua perspectiva moral. Suas características físicas variam dependendo de seu legado específico, mas sempre incluem elementos que refletem sua herança ínfera.",
+      "legacies": [
+        {
+          "name": "Abissal",
+          "description": "A entropia do Abismo, o caos do Pandemônio e o desespero do Cárceri atraem os tiferinos com legado abissal. Sua conexão com o caos e a destruição se manifesta em características físicas e habilidades únicas.",
+          "features": ["Chifres", "Pelos", "Presas", "Aromas peculiares"],
+          "featuresByLevel": [
+            { "level": 1, "feature": "Você tem Resistência a dano Venenoso. Você também conhece o truque Rajada de Veneno." },
+            { "level": 3, "feature": "Raio Nauseante" },
+            { "level": 5, "feature": "Paralisar Pessoa" }
+          ]
+        },
+        {
+          "name": "Ctônico",
+          "description": "Os tiferinos com o legado ctônico sentem não apenas o puxão de Cárceri, mas também a ganância de Gehenna e a escuridão do Hades. Sua conexão com a morte e o submundo se manifesta em uma aparência cadavérica e poderes relacionados à necromancia.",
+          "features": ["Aparência cadavérica", "Beleza sobrenatural", "Características de megera da noite"],
+          "featuresByLevel": [
+            { "level": 1, "feature": "Você tem Resistência a dano Necrótico. Você também conhece o truque Toque Necrótico." },
+            { "level": 3, "feature": "Vitalidade Vazia" },
+            { "level": 5, "feature": "Raio do Enfraquecimento" }
+          ]
+        },
+        {
+          "name": "Infernal",
+          "description": "O legado infernal liga os tiferinos não apenas à Gehenna, mas também aos Nove Infernos e aos intensos campos de batalha de Aqueronte. Sua conexão com o fogo e a guerra se manifesta em características físicas impressionantes e poderes de combate.",
+          "features": ["Chifres", "Espinhos", "Caudas", "Olhos dourados", "Odor de enxofre"],
+          "featuresByLevel": [
+            { "level": 1, "feature": "Você tem Resistência a dano Ígneo. Você também conhece o truque Raio de Fogo." },
+            { "level": 3, "feature": "Repreensão Diabólica" },
+            { "level": 5, "feature": "Escuridão" }
+          ]
+        }
+      ],
+      "traits": {
+        "creatureType": "Humanoide",
+        "size": "Médio (cerca de 1,20-2,10 metros de altura) ou Pequeno (cerca de 0,90-1,20 metro de altura)",
+        "movement": "9 metros",
+        "abilities": [
+          {
+            "name": "Visão no Escuro",
+            "description": "Você tem Visão no Escuro com um alcance de 18 metros. Sua visão tiferina lhe permite ver na escuridão total como se fosse penumbra, e na penumbra como se fosse luz plena.",
+            "level": 1
+          },
+          {
+            "name": "Legado Ínfero",
+            "description": "Você é o portador de um legado que lhe confere poderes sobrenaturais. Esta herança ínfera se manifesta de diferentes formas dependendo de seu legado específico.",
+            "level": 1
+          },
+          {
+            "name": "Presença Sobrenatural",
+            "description": "Você conhece o truque Taumaturgia. Sua conexão com os planos inferiores lhe permite manipular pequenos efeitos sobrenaturais.",
+            "level": 1
+          }
+        ]
+      }
+    }
+  }
+} 
