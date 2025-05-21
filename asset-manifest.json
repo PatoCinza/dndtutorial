@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/dndtutorial/static/css/main.0961a2eb.css",
-    "main.js": "/dndtutorial/static/js/main.5e11ee46.js",
+    "main.css": "/dndtutorial/static/css/main.99cf68ee.css",
+    "main.js": "/dndtutorial/static/js/main.20131a50.js",
     "static/js/453.499948c7.chunk.js": "/dndtutorial/static/js/453.499948c7.chunk.js",
+    "static/media/magic-circle-bg.jpg": "/dndtutorial/static/media/magic-circle-bg.7a3973b2d3035521d2ed.jpg",
     "static/media/alignment-chart.png": "/dndtutorial/static/media/alignment-chart.17723d4cda020bbcb726.png",
     "static/media/d20-index.png": "/dndtutorial/static/media/d20-index.43493308faab2a4b8997.png",
     "static/media/experience-table.png": "/dndtutorial/static/media/experience-table.4a4dfe91a3fbd7deedb5.png",
@@ -44,12 +45,12 @@
     "static/media/material.svg": "/dndtutorial/static/media/material.c2610a592c3ac0838c1db2cc8a05c32e.svg",
     "static/media/vocal.svg": "/dndtutorial/static/media/vocal.7264a060feadf92f32728f63fa5a3e43.svg",
     "index.html": "/dndtutorial/index.html",
-    "main.0961a2eb.css.map": "/dndtutorial/static/css/main.0961a2eb.css.map",
-    "main.5e11ee46.js.map": "/dndtutorial/static/js/main.5e11ee46.js.map",
+    "main.99cf68ee.css.map": "/dndtutorial/static/css/main.99cf68ee.css.map",
+    "main.20131a50.js.map": "/dndtutorial/static/js/main.20131a50.js.map",
     "453.499948c7.chunk.js.map": "/dndtutorial/static/js/453.499948c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0961a2eb.css",
-    "static/js/main.5e11ee46.js"
+    "static/css/main.99cf68ee.css",
+    "static/js/main.20131a50.js"
   ]
 }
