@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/dndtutorial/static/css/main.99cf68ee.css",
-    "main.js": "/dndtutorial/static/js/main.20131a50.js",
+    "main.css": "/dndtutorial/static/css/main.f94b66f1.css",
+    "main.js": "/dndtutorial/static/js/main.507eb0fd.js",
     "static/js/453.499948c7.chunk.js": "/dndtutorial/static/js/453.499948c7.chunk.js",
     "static/media/magic-circle-bg.jpg": "/dndtutorial/static/media/magic-circle-bg.7a3973b2d3035521d2ed.jpg",
     "static/media/alignment-chart.png": "/dndtutorial/static/media/alignment-chart.17723d4cda020bbcb726.png",
     "static/media/d20-index.png": "/dndtutorial/static/media/d20-index.43493308faab2a4b8997.png",
-    "static/media/experience-table.png": "/dndtutorial/static/media/experience-table.4a4dfe91a3fbd7deedb5.png",
     "static/media/dnd-logo.svg": "/dndtutorial/static/media/dnd-logo.739c9466f5760e6bd2bb34459ced6c53.svg",
     "static/media/ritual.svg": "/dndtutorial/static/media/ritual.8dd81ae8525842cedc30fb033e7f54b4.svg",
     "static/media/rogue.svg": "/dndtutorial/static/media/rogue.48a7c52e27389460b36f4821145dc6c5.svg",
@@ -36,7 +35,6 @@
     "static/media/conjuration.svg": "/dndtutorial/static/media/conjuration.4c386a242b2ab40bb1bd835637d453fd.svg",
     "static/media/concentration.svg": "/dndtutorial/static/media/concentration.3f2257f75a518234c6370adbe7bd2565.svg",
     "static/media/somatic.svg": "/dndtutorial/static/media/somatic.26b6d6349f272efcd75768d2df934e7a.svg",
-    "static/media/book-unknown.svg": "/dndtutorial/static/media/book-unknown.6bbce4b8868011860ec8b1c2b2ed67ca.svg",
     "static/media/illusion.svg": "/dndtutorial/static/media/illusion.2c9fef5a6afc7c43c5a575d5a3c7335b.svg",
     "static/media/divination.svg": "/dndtutorial/static/media/divination.436bf9059297379d043a181afb819ade.svg",
     "static/media/abjuration.svg": "/dndtutorial/static/media/abjuration.b4993fafe260980bdfcfc19b888a33ae.svg",
@@ -45,12 +43,12 @@
     "static/media/material.svg": "/dndtutorial/static/media/material.c2610a592c3ac0838c1db2cc8a05c32e.svg",
     "static/media/vocal.svg": "/dndtutorial/static/media/vocal.7264a060feadf92f32728f63fa5a3e43.svg",
     "index.html": "/dndtutorial/index.html",
-    "main.99cf68ee.css.map": "/dndtutorial/static/css/main.99cf68ee.css.map",
-    "main.20131a50.js.map": "/dndtutorial/static/js/main.20131a50.js.map",
+    "main.f94b66f1.css.map": "/dndtutorial/static/css/main.f94b66f1.css.map",
+    "main.507eb0fd.js.map": "/dndtutorial/static/js/main.507eb0fd.js.map",
     "453.499948c7.chunk.js.map": "/dndtutorial/static/js/453.499948c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99cf68ee.css",
-    "static/js/main.20131a50.js"
+    "static/css/main.f94b66f1.css",
+    "static/js/main.507eb0fd.js"
   ]
 }
