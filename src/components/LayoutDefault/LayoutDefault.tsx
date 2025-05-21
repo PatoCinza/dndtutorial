@@ -9,6 +9,7 @@ export const LayoutDefault = () => {
     <div className="layout">
       <nav className='nav-bar'>
         <h1 className='title'>Referência D&D</h1>
+        <NavLink className='nav-item' to={'/'}>Home</NavLink>
 
         {navigation.map((item) => (
           <NavLink className='nav-item' to={item.to}>{item.title}</NavLink>
