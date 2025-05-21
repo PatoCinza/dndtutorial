@@ -3,6 +3,8 @@ import backgroundsData from './backgrounds.json';
 import './Antecedentes.css';
 import Modal from '../../components/Modal/Modal';
 import PreviewCard from '../../components/PreviewCard/PreviewCard';
+import SearchInput from '../../components/SearchInput/SearchInput';
+
 interface Background {
   name: string;
   attributeValues: string[];
@@ -104,15 +106,11 @@ const Antecedentes: React.FC = () => {
         </ul>
       </section>
 
-      <div className="search-container">
-        <input
-          type="text"
-          className="search-input"
-          placeholder="Buscar Antecedente"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </div>
+      <SearchInput
+        value={searchTerm}
+        onChange={setSearchTerm}
+        placeholder="Buscar Antecedente"
+      />
 
       <div className="backgrounds-grid">
         {filteredBackgrounds.map(([id, background]) => (
