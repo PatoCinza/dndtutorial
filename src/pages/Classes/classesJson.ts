@@ -1,16 +1,16 @@
 // Import class icons
-import { ReactComponent as BarbarianIcon } from '../../components/SpellCard/assets/class icons/barbarian.svg';
-import { ReactComponent as BardIcon } from '../../components/SpellCard/assets/class icons/bard.svg';
-import { ReactComponent as ClericIcon } from '../../components/SpellCard/assets/class icons/cleric.svg';
-import { ReactComponent as DruidIcon } from '../../components/SpellCard/assets/class icons/druid.svg';
-import { ReactComponent as FighterIcon } from '../../components/SpellCard/assets/class icons/fighter.svg';
-import { ReactComponent as MonkIcon } from '../../components/SpellCard/assets/class icons/monk.svg';
-import { ReactComponent as PaladinIcon } from '../../components/SpellCard/assets/class icons/paladin.svg';
-import { ReactComponent as RangerIcon } from '../../components/SpellCard/assets/class icons/ranger.svg';
-import { ReactComponent as RogueIcon } from '../../components/SpellCard/assets/class icons/rogue.svg';
-import { ReactComponent as SorcererIcon } from '../../components/SpellCard/assets/class icons/sorcerer.svg';
-import { ReactComponent as WarlockIcon } from '../../components/SpellCard/assets/class icons/warlock.svg';
-import { ReactComponent as WizardIcon } from '../../components/SpellCard/assets/class icons/wizard.svg';
+import { ReactComponent as BarbarianIcon } from '../../assets/class icons/barbarian.svg';
+import { ReactComponent as BardIcon } from '../../assets/class icons/bard.svg';
+import { ReactComponent as ClericIcon } from '../../assets/class icons/cleric.svg';
+import { ReactComponent as DruidIcon } from '../../assets/class icons/druid.svg';
+import { ReactComponent as FighterIcon } from '../../assets/class icons/fighter.svg';
+import { ReactComponent as MonkIcon } from '../../assets/class icons/monk.svg';
+import { ReactComponent as PaladinIcon } from '../../assets/class icons/paladin.svg';
+import { ReactComponent as RangerIcon } from '../../assets/class icons/ranger.svg';
+import { ReactComponent as RogueIcon } from '../../assets/class icons/rogue.svg';
+import { ReactComponent as SorcererIcon } from '../../assets/class icons/sorcerer.svg';
+import { ReactComponent as WarlockIcon } from '../../assets/class icons/warlock.svg';
+import { ReactComponent as WizardIcon } from '../../assets/class icons/wizard.svg';
 
 export default [
     {

@@ -1,12 +1,12 @@
 import React from 'react';
-import { ReactComponent as BardIcon } from '../assets/class icons/bard.svg';
-import { ReactComponent as ClericIcon } from '../assets/class icons/cleric.svg';
-import { ReactComponent as DruidIcon } from '../assets/class icons/druid.svg';
-import { ReactComponent as PaladinIcon } from '../assets/class icons/paladin.svg';
-import { ReactComponent as RangerIcon } from '../assets/class icons/ranger.svg';
-import { ReactComponent as SorcererIcon } from '../assets/class icons/sorcerer.svg';
-import { ReactComponent as WarlockIcon } from '../assets/class icons/warlock.svg';
-import { ReactComponent as WizardIcon } from '../assets/class icons/wizard.svg';
+import { ReactComponent as BardIcon } from '../../../assets/class icons/bard.svg';
+import { ReactComponent as ClericIcon } from '../../../assets/class icons/cleric.svg';
+import { ReactComponent as DruidIcon } from '../../../assets/class icons/druid.svg';
+import { ReactComponent as PaladinIcon } from '../../../assets/class icons/paladin.svg';
+import { ReactComponent as RangerIcon } from '../../../assets/class icons/ranger.svg';
+import { ReactComponent as SorcererIcon } from '../../../assets/class icons/sorcerer.svg';
+import { ReactComponent as WarlockIcon } from '../../../assets/class icons/warlock.svg';
+import { ReactComponent as WizardIcon } from '../../../assets/class icons/wizard.svg';
 
 interface SpellClassesProps {
     classes: string[];

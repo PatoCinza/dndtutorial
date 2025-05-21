@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
+import { navigation } from '../../contexts/navigation';
 
 import './LayoutDefault.css'
 
@@ -8,15 +9,10 @@ export const LayoutDefault = () => {
     <div className="layout">
       <nav className='nav-bar'>
         <h1 className='title'>Referência D&D</h1>
-        <NavLink className='nav-item' to="/">Home</NavLink>
-        <NavLink className='nav-item' to="/como-jogar">Como Jogar</NavLink>
-        <NavLink className='nav-item' to="/tutorial-ficha">Tutorial de Ficha</NavLink>
-        <NavLink className='nav-item' to="/lista-magias">Lista de Magias</NavLink>
-        <NavLink className='nav-item' to="/ficha-personagem">Ficha de Personagem</NavLink>
-        <NavLink className='nav-item' to="/classes">Classes</NavLink>
-        <NavLink className='nav-item' to="/antecedentes">Antecedentes</NavLink>
-        <NavLink className='nav-item' to="/especies">Espécies</NavLink>
-        <NavLink className='nav-item' to="/feats">Talentos</NavLink>
+
+        {navigation.map((item) => (
+          <NavLink className='nav-item' to={item.to}>{item.title}</NavLink>
+        ))}
       </nav>
       <main className='content'>
         <Outlet />
