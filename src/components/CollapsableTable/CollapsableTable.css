@@ -18,9 +18,30 @@
   user-select: none;
 }
 
+.collapsable-table-header span:last-child {
+  transition: transform 0.5s ease;
+  display: inline-block;
+}
+
+.collapsable-table-header span:last-child.rotated {
+  transform: rotate(-180deg); 
+}
+
 .collapsable-table-table {
   width: 100%;
   border-collapse: collapse;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .collapsable-table-th {

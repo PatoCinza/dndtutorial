@@ -13,6 +13,7 @@
     padding: 0 16px;
     background-color: var(--md-background-dark-surface);
     border-bottom: 1px solid var(--border-color);
+    /* overflow-x: scroll; */
 }
 
 .nav-item {
@@ -26,6 +27,7 @@
     transition: var(--theme-transition);
     position: relative;
     align-content: center;
+    text-align: center;
 }
 
 .nav-item:hover {

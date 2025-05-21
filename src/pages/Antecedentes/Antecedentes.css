@@ -37,21 +37,6 @@
   color: var(--text-color-secondary);
 }
 
-.search-container {
-  margin-bottom: 2rem;
-}
-
-.search-input {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  background-color: var(--card-background);
-  color: var(--text-color);
-  transition: var(--theme-transition);
-}
-
 .search-input:focus {
   outline: none;
   border-color: var(--primary-color);

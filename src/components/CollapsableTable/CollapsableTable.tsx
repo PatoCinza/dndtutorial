@@ -9,9 +9,10 @@ export type CollapsableTableData = {
 interface CollapsableTableProps {
   data: CollapsableTableData;
   title?: string;
+  searchable?: boolean;
 }
 
-export const CollapsableTable: React.FC<CollapsableTableProps> = ({ data, title }) => {
+export const CollapsableTable: React.FC<CollapsableTableProps> = ({ data, title, searchable = false }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -21,7 +22,7 @@ export const CollapsableTable: React.FC<CollapsableTableProps> = ({ data, title 
         onClick={() => setOpen(o => !o)}
       >
         <span>{title || 'Tabela'}</span>
-        <span style={{ fontSize: 18 }}>{open ? '▲' : '▼'}</span>
+        <span style={{ fontSize: 18 }} className={open ? 'rotated' : ''}>▼</span>
       </div>
       {open && (
         <table className="collapsable-table-table">
@@ -33,10 +34,10 @@ export const CollapsableTable: React.FC<CollapsableTableProps> = ({ data, title 
             </tr>
           </thead>
           <tbody>
-            {data.rows.map((row, idx) => (
-              <tr key={idx} className={idx % 2 === 0 ? 'collapsable-table-row-even' : 'collapsable-table-row-odd'}>
-                {row.cells.map((cell, cidx) => (
-                  <td key={cidx} className="collapsable-table-td">{cell}</td>
+            {data.rows.map((row, j) => (
+              <tr key={j} className={j % 2 === 0 ? 'collapsable-table-row-even' : 'collapsable-table-row-odd'}>
+                {row.cells.map((cell, k) => (
+                  <td key={k} className="collapsable-table-td">{cell}</td>
                 ))}
               </tr>
             ))}

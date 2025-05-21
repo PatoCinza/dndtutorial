@@ -110,3 +110,57 @@ export const rareLanguagesTable: CollapsableTableData = {
     { cells: ['Subcomum', 'A Umbraeterna'] },
   ],
 };
+
+export const experienceTable: CollapsableTableData = {
+  header: ['Nível', 'Pontos de Experiência', 'Bônus de Proficiência'],
+  rows: [
+    { cells: ['1', '0', '+2'] },
+    { cells: ['2', '300', '+2'] },
+    { cells: ['3', '900', '+2'] },
+    { cells: ['4', '2.700', '+2'] },
+    { cells: ['5', '6.500', '+3'] },
+    { cells: ['6', '14.000', '+3'] },
+    { cells: ['7', '23.000', '+3'] },
+    { cells: ['8', '34.000', '+3'] },
+    { cells: ['9', '48.000', '+4'] },
+    { cells: ['10', '64.000', '+4'] },
+    { cells: ['11', '85.000', '+4'] },
+    { cells: ['12', '100.000', '+4'] },
+    { cells: ['13', '120.000', '+5'] },
+    { cells: ['14', '140.000', '+5'] },
+    { cells: ['15', '165.000', '+5'] },
+    { cells: ['16', '195.000', '+5'] },
+    { cells: ['17', '225.000', '+6'] },
+    { cells: ['18', '265.000', '+6'] },
+    { cells: ['19', '305.000', '+6'] },
+    { cells: ['20', '355.000', '+6'] },
+  ],
+};
+
+export const startingHigherLevelEquipmentTable: CollapsableTableData = {
+  header: ['Nível Inicial', 'Equipamento e Dinheiro', 'Itens Mágicos'],
+  rows: [
+    { cells: ['2–4', 'Equipamento Inicial Normal', '1 Comum'] },
+    { cells: ['5–10', '500 PO + 1d10 × 25 PO + equipamento inicial normal', '1 Comum, 1 Incomum'] },
+    { cells: ['11–16', '5.000 PO + 1d10 × 250 PO + equipamento inicial normal', '2 Comum, 3 Incomum, 1 Raro'] },
+    { cells: ['17–20', '20.000 PO + 1d10 × 250 PO + equipamento inicial normal', '2 Comum, 4 Incomum, 3 Raro, 1 Muito Raro'] },
+  ],
+};
+
+export const classHealthTable: CollapsableTableData = {
+  header: ['Classe', 'Pontos de Vida Máximos'],
+  rows: [
+    { cells: ['Bárbaro', '12 + mod. de Constituição'] },
+    { cells: ['Guardião', '10 + mod. de Constituição'] },
+    { cells: ['Guerreiro', '10 + mod. de Constituição'] },
+    { cells: ['Paladino', '10 + mod. de Constituição'] },
+    { cells: ['Bardo', '8 + mod. de Constituição'] },
+    { cells: ['Bruxo', '8 + mod. de Constituição'] },
+    { cells: ['Clérigo', '8 + mod. de Constituição'] },
+    { cells: ['Druida', '8 + mod. de Constituição'] },
+    { cells: ['Ladino', '8 + mod. de Constituição'] },
+    { cells: ['Monge', '8 + mod. de Constituição'] },
+    { cells: ['Feiticeiro', '6 + mod. de Constituição'] },
+    { cells: ['Mago', '6 + mod. de Constituição'] },
+  ],
+};

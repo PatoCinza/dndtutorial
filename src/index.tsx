@@ -17,9 +17,12 @@ import Classes from './pages/Classes/Classes';
 import Detalhes from './pages/Classes/Detalhes/Detalhes';
 import Antecedentes from './pages/Antecedentes/Antecedentes';
 import Especies from './pages/Especies/Especies';
+import Talentos from './pages/Talentos/Talentos';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <ThemeProvider>
     <HashRouter>
@@ -32,6 +35,7 @@ root.render(
           <Route path='/ficha-personagem' element={<FichaPersonagem />} />
           <Route path='/antecedentes' element={<Antecedentes />} />
           <Route path='/especies' element={<Especies />} />
+          <Route path='/feats' element={<Talentos />} />
           <Route path='/classes'>
             <Route index element={<Classes />}/>
             <Route path='/classes/barbarian' element={<Detalhes />}/>

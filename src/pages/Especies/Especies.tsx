@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import speciesData from './species.json';
-import Modal from '../../components/Modal/Modal';
-import './Especies.css';
-import PreviewCard from '../../components/PreviewCard/PreviewCard';
+import React, { useState } from "react";
+import speciesData from "./species.json";
+import Modal from "../../components/Modal/Modal";
+import "./Especies.css";
+import PreviewCard from "../../components/PreviewCard/PreviewCard";
 
 interface FeatureByLevel {
   level: number;
@@ -26,7 +26,12 @@ interface TraitAbility {
   name: string;
   description: string;
   level?: number;
-  options?: { type: string; damage: string; name: string; description: string }[];
+  options?: {
+    type: string;
+    damage: string;
+    name: string;
+    description: string;
+  }[];
 }
 
 interface Species {
@@ -49,7 +54,7 @@ interface SpeciesData {
 }
 
 const Especies: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [selectedSpecies, setSelectedSpecies] = useState<Species | null>(null);
 
   const data = speciesData as SpeciesData;
@@ -99,19 +104,30 @@ const Especies: React.FC = () => {
       <div className="section">
         <h3>Traços</h3>
         <ul>
-          <li><strong>Tipo de Criatura:</strong> {selectedSpecies.traits.creatureType}</li>
-          <li><strong>Tamanho:</strong> {selectedSpecies.traits.size}</li>
-          <li><strong>Deslocamento:</strong> {selectedSpecies.traits.movement}</li>
+          <li>
+            <strong>Tipo de Criatura:</strong>{" "}
+            {selectedSpecies.traits.creatureType}
+          </li>
+          <li>
+            <strong>Tamanho:</strong> {selectedSpecies.traits.size}
+          </li>
+          <li>
+            <strong>Deslocamento:</strong> {selectedSpecies.traits.movement}
+          </li>
         </ul>
         <h4>Habilidades</h4>
         <ul>
           {selectedSpecies.traits.abilities.map((ab, idx) => (
             <li key={idx}>
-              <strong>{ab.name}</strong>{ab.level ? ` (Nível ${ab.level})` : ''}: {ab.description}
+              <strong>{ab.name}</strong>
+              {ab.level ? ` (Nível ${ab.level})` : ""}: {ab.description}
               {ab.options && (
                 <ul>
                   {ab.options.map((opt, i) => (
-                    <li key={i}><strong>{opt?.type || opt?.name}:</strong> {opt?.damage || opt?.description}</li>
+                    <li key={i}>
+                      <strong>{opt?.type || opt?.name}:</strong>{" "}
+                      {opt?.damage || opt?.description}
+                    </li>
                   ))}
                 </ul>
               )}
@@ -140,7 +156,9 @@ const Especies: React.FC = () => {
               <p>{legacy.description}</p>
               {legacy.features && legacy.features.length > 0 && (
                 <ul className="legacy-features">
-                  {legacy.features.map((f, i) => <li key={i}>{f}</li>)}
+                  {legacy.features.map((f, i) => (
+                    <li key={i}>{f}</li>
+                  ))}
                 </ul>
               )}
               {renderFeaturesTable(legacy.featuresByLevel)}
@@ -188,4 +206,4 @@ const Especies: React.FC = () => {
   );
 };
 
-export default Especies; 
+export default Especies;
