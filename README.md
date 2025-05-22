@@ -1,46 +1,137 @@
-# Getting Started with Create React App
+# D&D Tutorial App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application to help users learn and manage Dungeons & Dragons content, including classes, spells, monsters, and more.
+
+## Table of Contents
+
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Development Guide](#development-guide)
+- [Learn More](#learn-more)
+
+---
+
+## Project Structure
+
+```
+dndtutorial/
+  public/                  # Static files (index.html, favicon, etc.)
+  src/
+    assets/                # Global static assets (images, icons)
+      class icons/
+    components/            # Reusable React components
+      CollapsableTable/
+      LayoutDefault/
+      LinkCard/
+      Links/
+      Modal/
+      PreviewCard/
+      SearchInput/
+      SpellCard/
+        assets/
+          magic level icons/
+          spell icons/
+        SpellClasses/
+    contexts/              # React context providers for state management
+    pages/                 # Main app pages (routed views)
+      Antecedentes/
+      Classes/
+        Detalhes/
+      ComoJogar/
+      Especies/
+      FichaPersonagem/
+      Home/
+      Magias/
+      Monstros/
+        assets/
+      Talentos/
+      TutorialFicha/
+  package.json             # Project metadata and dependencies
+  tsconfig.json            # TypeScript configuration
+  README.md                # Project documentation
+```
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher recommended)
+- npm (v8 or higher)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd dndtutorial
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+---
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- **Start the development server:**
+  ```bash
+  npm start
+  ```
+  Runs the app in development mode at [http://localhost:3000](http://localhost:3000).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Run tests:**
+  ```bash
+  npm test
+  ```
+  Launches the test runner in interactive watch mode.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Build for production:**
+  ```bash
+  npm run build
+  ```
+  Builds the app for production to the `build` folder.
 
-### `npm test`
+- **Eject configuration (not recommended):**
+  ```bash
+  npm run eject
+  ```
+  Copies configuration files and dependencies for full control.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Development Guide
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Components:**  
+  All reusable UI elements are in `src/components/`. Each subfolder is a component or a group of related components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Pages:**  
+  Main application views are in `src/pages/`. Each folder represents a route or a feature section (e.g., Classes, Magias, Monstros).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Assets:**  
+  Images and icons are organized in `src/assets/` and within relevant component/page folders.
 
-### `npm run eject`
+- **Contexts:**  
+  Shared state and logic using React Context API are in `src/contexts/`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Adding New Features:**  
+  - Create new components in `src/components/`.
+  - Add new pages or sections in `src/pages/`.
+  - Store related assets in the appropriate `assets/` folder.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **TypeScript:**  
+  The project uses TypeScript for type safety. Update `tsconfig.json` as needed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+- [React Documentation](https://reactjs.org/)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
